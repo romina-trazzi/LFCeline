@@ -1,0 +1,459 @@
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+/* Codice CSS Louis Ferdinand Celine */
+/* CLASSI UTILITY */
+.d_flex {
+  display: flex;
+}
+
+.d_flex_column {
+  display: flex;
+  flex-direction: column;
+}
+
+.d_flex_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.d_grid {
+  display: grid;
+}
+
+.position_absolute {
+  position: absolute;
+}
+
+.position_relative {
+  position: relative;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.h100 {
+  height: 100%;
+}
+
+/*=============================================
+        =            MEDIAQUERY       =
+=============================================*/
+/*=====  End of Section Mediaquery comment block  ======*/
+/*=============================================
+=            Section INPUT RADIO           =
+=============================================*/
+label {
+  margin: 0;
+  cursor: pointer;
+}
+
+.radio_input {
+  visibility: hidden;
+}
+
+.radio_nuovo_input {
+  display: inline;
+  margin-top: 30px;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  background-color: floralwhite;
+  background-clip: content-box;
+}
+.radio_nuovo_input:focus, .radio_nuovo_input:hover {
+  border: 1px solid darkgray;
+}
+
+.radio_nuovo_input::after {
+  content: "";
+  display: block;
+  width: 70%;
+  height: 70%;
+  background: rgb(68, 7, 7);
+  margin: 2px;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: transform 0.2s;
+}
+
+.radio_input:checked + .radio_nuovo_input::after {
+  transform: scale(1);
+}
+
+/*=====  End of Section INPUT  ======*/
+/*=============================================
+=               Section SOCIAL ICON         =
+==============================================*/
+/*=====  End of Section SOCIAL ICON  ======*/
+/*========================================
+=            Section BUTTON         =
+========================================*/
+.button {
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  padding: 0.5em 2em 0.55em;
+  border-radius: 0.5em;
+  letter-spacing: 1px;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.button:hover, .button:focus {
+  color: black;
+  text-decoration: none;
+}
+
+.button:active {
+  position: relative;
+  top: 1px;
+  background-color: white;
+  color: black;
+}
+
+.orange {
+  color: floralwhite;
+  border: solid 1px rgb(218, 124, 12);
+  background: rgb(247, 141, 29);
+  background: -moz-linear-gradient(top, rgb(250, 165, 26), rgb(244, 122, 32));
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#faa51a", endColorstr="#f47a20");
+}
+
+.orange:hover {
+  background: #f47c20;
+  background: -moz-linear-gradient(top, rgb(248, 142, 17), rgb(240, 96, 21));
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f88e11", endColorstr="#f06015");
+}
+
+.orange:active {
+  color: black;
+  background: -moz-linear-gradient(top, rgb(244, 122, 32), rgb(250, 165, 26));
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f47a20", endColorstr="#faa51a");
+}
+
+/*=====  End of Section BUTTON ======*/
+/*=============================================
+    =            Section LISTS           =
+==============================================*/
+ul {
+  list-style: none;
+}
+
+/*=====  End of Section LISTS  ======*/
+/*=====================================
+=             Section LINKS          =
+======================================*/
+a:hover {
+  color: black;
+}
+
+.my_links {
+  color: floralwhite;
+}
+.my_links:hover {
+  text-decoration: none;
+  color: rgb(250, 153, 28) !important;
+}
+
+/*=====  End of Section LINKS  ======*/
+/*=============================================
+=               Section SCROLLBARS          =
+==============================================*/
+/* Mozilla Firefox */
+* {
+  scrollbar-color: transparent black;
+  scrollbar-width: 0px;
+}
+
+/* Google, Safari, Edge, Opera */
+*::-webkit-scrollbar {
+  overflow: scroll;
+}
+
+*::-webkit-scrollbar-track {
+  background: black;
+}
+
+*::-webkit-scrollbar-thumb {
+  border: none;
+}
+
+/*===== Codice per frecce browser Webkit ======*/
+*::-webkit-scrollbar-button:vertical:start:decrement {
+  background: linear-gradient(120deg, black 40%, rgba(0, 0, 0, 0) 41%), linear-gradient(240deg, black 40%, rgba(0, 0, 0, 0) 41%), linear-gradient(0deg, black 30%, rgba(0, 0, 0, 0) 31%);
+  background-color: floralwhite;
+}
+
+*::-webkit-scrollbar-button:vertical:end:increment {
+  background: linear-gradient(300deg, black 40%, rgba(0, 0, 0, 0) 41%), linear-gradient(60deg, black 40%, rgba(0, 0, 0, 0) 41%), linear-gradient(180deg, black 30%, rgba(0, 0, 0, 0) 31%);
+  background-color: floralwhite;
+}
+
+/*===== End Codice per frecce browser Webkit ======*/
+/* Explorer */
+* {
+  -ms-overflow-style: none;
+}
+
+/*=====  End of Section SCROLLBARS  ======*/
+/*================================================
+    =           Section CARD BUTTONS       =
+================================================*/
+@media (min-width: 1300px) and (max-width: 1500px) {
+  .button {
+    font-size: 1.3vw !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1299px) {
+  .button {
+    font-size: 1rem !important;
+  }
+  .col-xl-4:first-child .button, .col-xl-4:last-child .button {
+    white-space: normal !important;
+  }
+}
+@media (min-width: 580px) and (max-width: 991px) {
+  .button {
+    padding: 0.5em 2em 0.55em;
+  }
+}
+@media (min-width: 471px) and (max-width: 579px) {
+  .button {
+    font-size: 1.15rem !important;
+    padding: 0.5em 0.55em;
+  }
+}
+@media (max-width: 470px) {
+  .button {
+    font-size: 1rem !important;
+    padding: 0.5em 0.55em;
+    white-space: normal !important;
+  }
+}
+.sliderContainer {
+  height: 560px;
+  width: 100%;
+}
+.sliderContainer .slider {
+  height: 560px;
+  width: 100%;
+}
+.sliderContainer .slider-track-container {
+  width: 390px;
+}
+.sliderContainer .slider-track {
+  padding: 0;
+  height: 100%;
+}
+.sliderContainer .slide {
+  padding: 0;
+  filter: drop-shadow(25px 10px 8px rgba(0, 0, 0, 0.2));
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 390px;
+}
+.sliderContainer .slide img {
+  opacity: 20%;
+  filter: blur(3px);
+  transition: 0.5s linear;
+  visibility: hidden;
+}
+.sliderContainer .slide.selected img {
+  opacity: 1 !important;
+  filter: none !important;
+  visibility: visible;
+}
+.sliderContainer .btnC {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  z-index: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  font-size: 18px;
+}
+.sliderContainer .btnC:active {
+  transform: scale(1.1);
+}
+.sliderContainer #btn-prev-position {
+  justify-self: end;
+  align-self: center;
+}
+.sliderContainer #btn-next-position {
+  justify-self: start;
+  align-self: center;
+}
+.sliderContainer .carousel_button {
+  color: floralwhite;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 240, 0.5);
+  border-radius: 4px;
+  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.1);
+  text-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
+  opacity: 1;
+  cursor: pointer;
+  transition: opacity 150ms ease, border 300ms ease-in-out;
+  line-height: 1;
+}
+.sliderContainer .carousel_button:hover {
+  outline: none;
+  border-color: white;
+}
+.sliderContainer .carousel_button:focus {
+  color: floralwhite;
+}
+
+.radiobuttonContainer {
+  position: relative;
+  left: 50%;
+  cursor: pointer;
+  transform: translateX(-50%);
+  margin-top: 2.5em;
+}
+
+#radiobuttonController {
+  text-align: center;
+}
+
+.carousel_bullet {
+  background-color: rgba(255, 250, 240, 0.5);
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+  line-height: 0;
+  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.1);
+  margin-right: 0.75em;
+}
+.carousel_bullet:focus {
+  outline: none;
+  background-color: floralwhite;
+}
+.carousel_bullet:hover {
+  outline: none;
+  border: 2px solid floralwhite;
+  background-color: rgba(255, 255, 240, 0.5);
+}
+.carousel_bullet:active {
+  background-color: floralwhite;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background: rgb(68, 7, 7);
+  background: linear-gradient(180deg, rgb(68, 7, 7) 50%, rgb(49, 5, 5) 75%, rgb(24, 2, 2) 99%, rgb(0, 0, 0) 100%);
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+  color: black;
+}
+body .container_70 {
+  height: 100vh;
+  width: 70%;
+  margin: 0 auto;
+  background-color: rgb(251, 251, 251);
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: max-content auto 5%;
+  grid-template-areas: "header" "main" "footer";
+  overflow: hidden;
+}
+body header {
+  grid-area: header;
+  overflow: hidden;
+}
+body header .my_jumbotron {
+  font-family: "Dancing Script", "cursive";
+}
+body header .jumbo_box {
+  grid-template-columns: 22% auto;
+  grid-template-rows: auto;
+  grid-template-areas: "celineimg celinemaintext";
+  justify-items: center;
+  align-items: center;
+}
+body header .jumbo_box .jumbo_img {
+  grid-area: celineimg;
+}
+body header .jumbo_box .jumbo_img img {
+  width: auto;
+  max-height: 300px;
+  max-width: 255px;
+}
+body header .jumbo_box .jumbo_text {
+  grid-area: celinemaintext;
+}
+body header .jumbo_box .jumbo_text h1 {
+  font-size: 7rem;
+}
+body header .jumbo_box .jumbo_text h3 {
+  font-size: 2rem;
+}
+body header nav {
+  height: 100px;
+  width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 22% auto;
+  grid-template-rows: auto;
+  grid-template-areas: ". navbar";
+  align-items: center;
+}
+body header nav ul {
+  justify-content: space-evenly;
+}
+body header nav ul li > a {
+  text-decoration: none;
+  font-size: 1.2em;
+  color: black;
+  transition: 0.5s all ease;
+}
+body header nav ul li > a:hover {
+  text-decoration: underline;
+}
+body header nav #ham_menu {
+  display: none;
+}
+body header nav .hamburger {
+  display: none;
+  font-size: 1.2em;
+  color: black;
+}
+@media (max-width: 800px) {
+  body header .hamaburger {
+    display: block !important;
+  }
+  body header nav ul {
+    display: grid;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    left: 100%;
+    transition: 0.5s all ease;
+  }
+  body header #ham_menu:checked-ul {
+    left: 0;
+  }
+}
+body main {
+  grid-area: main;
+  background-color: lightgreen;
+}
+body footer {
+  grid-area: footer;
+  background-color: coral;
+}
