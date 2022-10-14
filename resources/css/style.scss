@@ -21,7 +21,7 @@ body {
     
     // Background & Typhography
     background: map-get($color-map, background_color);
-    background: linear-gradient(180deg, rgba(68,7,7,1) 50%, rgba(49,5,5,1) 75%, rgba(24,2,2,1) 99%, rgba(0,0,0,1) 100%);
+    background: radial-gradient(circle, rgba(68,7,7,1) 50%, rgba(49,5,5,1) 75%, rgba(24,2,2,1) 99%, rgba(0,0,0,1) 100%);
     overflow-x: hidden;
     font-family: 'Montserrat', sans-serif;
     color: black;
@@ -78,16 +78,17 @@ body {
 
                 .jumbo_text {
                     grid-area: celinemaintext;
-                    font-family: 'Dancing Script', 'cursive';
+                    padding-top: 30px;
                     
                     h1, h3 {
-
+                        
                         margin: 0;
                         padding: 0;
                     }
-
+                    
                     h1 {
                         font-size: 6rem;
+                        font-family: 'Dancing Script', 'cursive';
                     }
                     
                     h3 {

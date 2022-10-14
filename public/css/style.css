@@ -354,7 +354,7 @@ a:hover {
 
 body {
   background: rgb(68, 7, 7);
-  background: linear-gradient(180deg, rgb(68, 7, 7) 50%, rgb(49, 5, 5) 75%, rgb(24, 2, 2) 99%, rgb(0, 0, 0) 100%);
+  background: radial-gradient(circle, rgb(68, 7, 7) 50%, rgb(49, 5, 5) 75%, rgb(24, 2, 2) 99%, rgb(0, 0, 0) 100%);
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
   color: black;
@@ -393,7 +393,7 @@ body header .my_jumbotron .jumbo_box .jumbo_img img {
 }
 body header .my_jumbotron .jumbo_box .jumbo_text {
   grid-area: celinemaintext;
-  font-family: "Dancing Script", "cursive";
+  padding-top: 30px;
 }
 body header .my_jumbotron .jumbo_box .jumbo_text h1, body header .my_jumbotron .jumbo_box .jumbo_text h3 {
   margin: 0;
@@ -401,6 +401,7 @@ body header .my_jumbotron .jumbo_box .jumbo_text h1, body header .my_jumbotron .
 }
 body header .my_jumbotron .jumbo_box .jumbo_text h1 {
   font-size: 6rem;
+  font-family: "Dancing Script", "cursive";
 }
 body header .my_jumbotron .jumbo_box .jumbo_text h3 {
   font-size: 2rem;

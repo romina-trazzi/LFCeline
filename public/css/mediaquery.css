@@ -5,7 +5,7 @@
 @media (max-width: 500px) {
   .jumbo_box {
     grid-template-columns: 100% !important;
-    grid-template-rows: auto auto auto !important;
+    grid-template-rows: auto 2fr 1fr !important;
     grid-template-areas: "celineimg" "celinemaintext" "celinemaintext" !important;
   }
 }
@@ -16,17 +16,31 @@
     grid-template-areas: "celineimg" "celinemaintext" !important;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 1199px) {
+  .jumbo_text {
+    padding-top: 30px !important;
+  }
+}
+@media (max-width: 599px) {
   .jumbo_text h1 {
-    font-size: 15vw !important;
+    font-size: 2.3rem !important;
     text-align: center !important;
   }
   .jumbo_text h3 {
-    font-size: 7.5vw !important;
-    text-align: center;
+    display: none !important;
   }
 }
-@media (min-width: 401px) and (max-width: 999px) {
+@media (min-width: 600px) and (max-width: 799px) {
+  .jumbo_text h1 {
+    font-size: 7vw !important;
+    text-align: center !important;
+  }
+  .jumbo_text h3 {
+    font-size: 2.7vw !important;
+    text-align: center !important;
+  }
+}
+@media (min-width: 800px) and (max-width: 999px) {
   .jumbo_text h1 {
     font-size: 7vw !important;
   }
@@ -42,7 +56,7 @@
     font-size: 2.3vw !important;
   }
 }
-@media (max-width: 1199px) {
+@media (min-width: 599px) and (max-width: 1199px) {
   .my_jumbotron .jumbo_img {
     grid-area: celineimg !important;
     display: flex;
@@ -59,7 +73,6 @@
     flex-direction: column;
     justify-content: center !important;
     align-items: center !important;
-    padding-top: 30px !important;
   }
 }
 @media (min-width: 1200px) and (max-width: 1660px) {
