@@ -22,3 +22,5 @@ mix
     processCssUrls: false
 })
 
+
+mix.disableNotifications();

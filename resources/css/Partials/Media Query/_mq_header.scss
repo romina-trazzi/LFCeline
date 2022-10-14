@@ -1,0 +1,195 @@
+
+/*=============================================
+=            Section comment block            =
+=============================================*/
+
+// LAYOUT INTERNO + HAMBURGER
+@media (max-width: 500px) {
+    // Layout interno
+    .jumbo_box {
+        grid-template-columns: 100% !important; 
+        grid-template-rows: auto auto auto !important;
+        grid-template-areas: 
+            "celineimg"
+            "celinemaintext"
+            "celinemaintext" !important;
+        
+        // justify-items: center;
+        // align-items: center;
+    }
+}
+
+
+@media (min-width: 501px) and (max-width: 1199px) {
+    .my_jumbotron {
+
+        // Layout interno
+        .jumbo_box {
+            grid-template-columns: 100% !important; 
+            grid-template-rows: auto auto !important;
+            grid-template-areas: 
+                "celineimg"
+                "celinemaintext" !important;
+            
+            // justify-items: center;
+            // align-items: center;
+        }
+
+        // Navbar - Hamburger
+
+        // ul > li:nth-child(1) {
+        //     display: block !important;
+        // }
+
+        // .hamburger {
+        //     display: block !important;
+        //     z-index: 10;
+        // }
+
+        // nav ul {
+        //     display: grid !important;
+        //     position: fixed;
+        //     top: 0;
+        //     height: 100vh;
+        //     background-color: map-get($color-map, primary_color); 
+        //     width: 100%;
+        //     left: -21%;
+        //     margin-top: 520px;
+        //     transition: 0.5s all ease;
+        // }
+
+        // #ham_menu:checked {
+        //     left: 0;
+        // }
+    }
+
+
+}
+
+// IMG + TESTO JUMBOTRON
+
+
+// SOLO TESTO JUMBOTRON
+@media (max-width: 400px) {
+    .jumbo_text {
+       
+        h1 {
+            font-size: 15vw !important;
+            text-align: center !important; 
+        }
+        
+        h3 {
+            font-size: 7.5vw !important;
+            text-align: center;
+            
+        }
+    }
+    
+    
+}
+
+@media (min-width: 401px) and (max-width: 999px) {
+
+    .jumbo_text {
+       
+        h1 {
+            font-size: 7vw !important;
+        }
+        
+        h3 {
+            font-size: 2.5vw !important;
+            
+        }
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1199px) {
+
+    .jumbo_text {
+       
+        h1 {
+            font-size: 7vw !important;
+        }
+        
+        h3 {
+            font-size: 2.3vw !important;
+            
+        }
+    }
+}
+
+
+@media (max-width: 1199px) {
+    .my_jumbotron {
+
+        .jumbo_img {
+            grid-area: celineimg !important;
+            display: flex;
+            justify-content: center;
+          
+            img {
+                max-height: 300px;
+                max-width: 255px;
+                width: 90% !important;
+            }
+        }
+    
+        .jumbo_text {
+            grid-area: celinemaintext !important;
+            display: flex !important;
+            flex-direction: column;
+            justify-content: center !important;
+            align-items: center !important;
+            padding-top: 30px !important;
+        }
+        
+    }
+
+}
+
+
+
+
+// IMMAGINE + TESTO
+
+@media(min-width: 1200px) and (max-width: 1660px){
+    .my_jumbotron {
+
+        .jumbo_img {
+    
+            grid-area: celineimg;
+    
+            img {
+                width: 100% !important;
+            }
+
+        }
+    
+        .jumbo_text {
+            grid-area: celinemaintext;
+            
+            h1 {
+                font-size: 6vw !important;
+                margin-left: 20px !important;
+             
+            }
+            
+            h3 {
+                font-size: 1.9vw !important;
+                margin-left: 20px !important;
+            }
+        }
+
+
+    }
+
+}
+
+
+
+
+
+
+
+
+/*=====  End of Section comment block  ======*/
