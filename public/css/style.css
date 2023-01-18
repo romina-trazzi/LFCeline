@@ -416,7 +416,6 @@ body header nav {
   grid-template-rows: auto;
   grid-template-areas: ". navbar";
   align-items: center;
-  visibility: hidden;
 }
 body header nav ul {
   justify-content: space-evenly;

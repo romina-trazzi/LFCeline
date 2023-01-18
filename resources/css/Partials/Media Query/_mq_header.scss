@@ -3,7 +3,7 @@
 =            Section comment block            =
 =============================================*/
 
-// LAYOUT INTERNO + HAMBURGER
+// LAYOUT INTERNO 
 @media (max-width: 500px) {
     // Layout interno
     .jumbo_box {
@@ -19,7 +19,6 @@
     }
 }
 
-
 @media (min-width: 501px) and (max-width: 1199px) {
     .my_jumbotron {
 
@@ -34,45 +33,41 @@
             // justify-items: center;
             // align-items: center;
         }
-
-        // Navbar - Hamburger
-
-        // ul > li:nth-child(1) {
-        //     display: block !important;
-        // }
-
-        // .hamburger {
-        //     display: block !important;
-        //     z-index: 10;
-        // }
-
-        // nav ul {
-        //     display: grid !important;
-        //     position: fixed;
-        //     top: 0;
-        //     height: 100vh;
-        //     background-color: map-get($color-map, primary_color); 
-        //     width: 100%;
-        //     left: -21%;
-        //     margin-top: 520px;
-        //     transition: 0.5s all ease;
-        // }
-
-        // #ham_menu:checked {
-        //     left: 0;
-        // }
     }
 
 
 }
 
-@media (max-width: 1199px) {
-    .jumbo_text {
+// NAVBAR + HAMBURGER
 
-        padding-top: 30px !important;
+@media (min-width: 800px) and (max-width: 999px) {
+    nav li > a {
+        font-size: 1em !important;
     }
+
 }
 
+
+@media (min-width: 800px) and (max-width: 1199px) {
+
+    nav {
+        margin: auto;
+        display: grid;
+        grid-template-columns: auto !important;
+        grid-template-rows: auto !important;
+        grid-template-areas: "navbar" !important;
+        align-items: center;
+    }
+
+    nav > div:nth-child(1) {
+        display: none !important;
+    }
+
+}
+
+
+
+      
 // TESTO JUMBOTRON
 
 @media (max-width: 599px) {
@@ -134,9 +129,16 @@
     }
 }
 
+@media (min-width: 1200px) {
+    .jumbo_text {
+        padding-top: 0px !important;
+    }
+}
 
-// IMMAGINE + TESTO
-@media (min-width: 599px) and (max-width: 1199px) {
+
+
+// IMMAGINE + TESTO JUMBOTRON
+@media (max-width: 1199px) {
     .my_jumbotron {
 
         .jumbo_img {
@@ -166,19 +168,21 @@
 
 @media(min-width: 1200px) and (max-width: 1660px){
     .my_jumbotron {
-
+        
+        
         .jumbo_img {
-    
+            
             grid-area: celineimg;
-    
+            
             img {
                 width: 100% !important;
             }
 
         }
-    
+        
         .jumbo_text {
             grid-area: celinemaintext;
+            padding-top: 0px !important;
             
             h1 {
                 font-size: 6vw !important;

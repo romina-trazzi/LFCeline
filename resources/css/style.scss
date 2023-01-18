@@ -112,7 +112,6 @@ body {
             grid-template-rows: auto;
             grid-template-areas: ". navbar";
             align-items: center;
-            visibility: hidden;
 
             ul {
                 justify-content: space-evenly;
@@ -153,21 +152,6 @@ body {
 
     }
     
-
-       
-    
-
-
-
-
-
-
-
-
-
-
-
-
     main {
         grid-area: main;
         background-color: lightgreen;
