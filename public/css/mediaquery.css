@@ -16,22 +16,24 @@
     grid-template-areas: "celineimg" "celinemaintext" !important;
   }
 }
+@media (max-width: 799px) {
+  .bar_icon {
+    font-size: 1.3rem;
+  }
+}
 @media (min-width: 800px) and (max-width: 999px) {
   nav li > a {
     font-size: 1em !important;
   }
 }
-@media (min-width: 800px) and (max-width: 1199px) {
+@media (max-width: 1199px) {
   nav {
     margin: auto;
     display: grid;
-    grid-template-columns: auto !important;
-    grid-template-rows: auto !important;
+    grid-template-columns: 100% !important;
+    grid-template-rows: 0% !important;
     grid-template-areas: "navbar" !important;
     align-items: center;
-  }
-  nav > div:nth-child(1) {
-    display: none !important;
   }
 }
 @media (max-width: 599px) {

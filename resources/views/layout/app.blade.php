@@ -9,7 +9,7 @@
 
         <!-- Meta tag descrizione Google search -->
         <meta name="description" content="Descrizione del sito.">
-        <meta name="keyword" content="libri, editoria, storia militare, guerra, guerra mondiale">
+        <meta name="keyword" content="libri, editoria, Céline, storia militare, guerra, guerra mondiale">
         <meta name="author" content="Romina Trazzi">
 
         <title>Louis-Ferdinand Céline </title>
@@ -23,7 +23,9 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
         <!-- Fontawesome CSS -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.min.css" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"  type="text/css">
+      
 
         <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -78,7 +80,6 @@
 
 
     <!-- Javascript files -->
-    <script src="https://kit.fontawesome.com/dc7f057ed2.js" crossorigin="anonymous" type="text/Javascript"></script>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src= "{{asset('js/bootstrap.js')}}" type="text/Javascript"> </script>
     <script src= "{{asset('js/main_vue.js')}}" type="text/Javascript"> </script>

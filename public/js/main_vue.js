@@ -2517,6 +2517,57 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _bootstrap__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
+/*=================================================
+=            VANILLA JAVASCRIPT SECTION           =
+==================================================*/
+
+/*---------- Subsection Header  ----------*/
+
+var smallScreen = window.matchMedia('(max-width: 799px)');
+
+function mediaQuerySmall(smallScreen) {
+  // Check if the media query is true
+  if (smallScreen.matches) {
+    // Cambia la barMenu con le icone di FontAwesome
+    var list = document.getElementsByClassName('menu_list');
+    var _list_children = list[0].children; // Aggiungiamo le icone Fontawesome alle LI
+    // Icona Home
+
+    var home = _list_children[0];
+    home.innerHTML = "<a href=\"/home.php\"><i class=\"fa-solid fa-house bar_icon\"></i></a>"; //  Icona About
+
+    var about = _list_children[1];
+    about.innerHTML = "<a href=\"/aboutCeline.php\"><i class=\"fa-solid fa-address-card bar_icon\"></i></a>"; // Icona Bookstore
+
+    var bookstore = _list_children[2];
+    bookstore.innerHTML = "<a href=\"/bookstore.php\"><i class=\"fa-solid fa-book-skull bar_icon\"></i></a>"; // Icona Blog
+
+    var blog = _list_children[3];
+    blog.innerHTML = "<a href=\"#\"></a>"; // Icona Contatti
+
+    var contacts = _list_children[4];
+    contacts.innerHTML = "<a href=\"/contacts.php\"><i class=\"fa-solid fa-address-book bar_icon\"></i></a>";
+  } else {
+    // Icona Home
+    var _home = list_children[0];
+    _home.innerHTML = "<a href=\"/home.php\">HOME</a>"; // Icona About
+
+    var _about = list_children[1];
+    _about.innerHTML = "<a href=\"/aboutCeline.php\">ABOUT</a>"; // Icona Bookstore
+
+    var _bookstore = list_children[2];
+    _bookstore.innerHTML = "<a href=\"/bookstore.php\">BOOKSTORE</a>"; // Icona Blog
+
+    var _blog = list_children[3];
+    _blog.innerHTML = "<a href=\"#\">BLOG</a>"; // Icona contatti
+
+    var _contacts = list_children[4];
+    _contacts.innerHTML = "<a href=\"/contacts.php\">CONTATTI</a>";
+  }
+}
+
+smallScreen.addEventListener(mediaQuerySmall, onchange);
+mediaQuerySmall(smallScreen);
 
 /***/ }),
 

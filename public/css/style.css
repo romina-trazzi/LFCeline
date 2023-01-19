@@ -416,6 +416,7 @@ body header nav {
   grid-template-rows: auto;
   grid-template-areas: ". navbar";
   align-items: center;
+  background: black;
 }
 body header nav ul {
   justify-content: space-evenly;
@@ -423,21 +424,11 @@ body header nav ul {
 body header nav ul li > a {
   text-decoration: none;
   font-size: 1.2em;
-  color: black;
+  color: rgb(255, 250, 240);
   transition: 0.5s all ease;
 }
 body header nav ul li > a:hover {
   text-decoration: underline;
-}
-body header nav #ham_menu {
-  display: none;
-}
-body header nav ul > li:nth-child(1) {
-  display: none;
-}
-body header nav .hamburger {
-  font-size: 1.2em;
-  color: black;
 }
 body main {
   grid-area: main;

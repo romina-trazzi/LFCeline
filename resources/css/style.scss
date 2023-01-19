@@ -112,6 +112,7 @@ body {
             grid-template-rows: auto;
             grid-template-areas: ". navbar";
             align-items: center;
+            background: map-get($color-map, background_bar_color);
 
             ul {
                 justify-content: space-evenly;
@@ -120,30 +121,13 @@ body {
             ul li > a {
                 text-decoration: none;
                 font-size: 1.2em;
-                color: black;
+                color: map-get($color-map, text_color);
                 transition: 0.5s all ease;
             }
 
             ul li > a:hover {
                 text-decoration: underline;
             }
-
-            // Checkbox
-            #ham_menu {
-                display: none;
-            }
-
-            
-            ul > li:nth-child(1) {
-                display: none;
-            }
-
-            // Hamburger
-            .hamburger {
-                font-size: 1.2em;
-                color: black;
-            }
-
         
         }
 

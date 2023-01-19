@@ -9,13 +9,7 @@
     .jumbo_box {
         grid-template-columns: 100% !important; 
         grid-template-rows: auto 2fr 1fr !important;
-        grid-template-areas: 
-            "celineimg"
-            "celinemaintext"
-            "celinemaintext" !important;
-        
-        // justify-items: center;
-        // align-items: center;
+        grid-template-areas: "celineimg" "celinemaintext" "celinemaintext" !important;
     }
 }
 
@@ -26,19 +20,20 @@
         .jumbo_box {
             grid-template-columns: 100% !important; 
             grid-template-rows: auto auto !important;
-            grid-template-areas: 
-                "celineimg"
-                "celinemaintext" !important;
-            
-            // justify-items: center;
-            // align-items: center;
+            grid-template-areas: "celineimg" "celinemaintext" !important;
+
         }
     }
 
 
 }
 
-// NAVBAR + HAMBURGER
+// NAVBAR + MENU' NAVIGAZIONE
+@media (max-width: 799px) {
+   .bar_icon {
+        font-size: 1.3rem;
+   }
+}
 
 @media (min-width: 800px) and (max-width: 999px) {
     nav li > a {
@@ -47,29 +42,21 @@
 
 }
 
-
-@media (min-width: 800px) and (max-width: 1199px) {
-
+@media (max-width: 1199px) {
     nav {
         margin: auto;
         display: grid;
-        grid-template-columns: auto !important;
-        grid-template-rows: auto !important;
+        grid-template-columns: 100% !important;
+        grid-template-rows: 0% !important;
         grid-template-areas: "navbar" !important;
         align-items: center;
     }
-
-    nav > div:nth-child(1) {
-        display: none !important;
-    }
-
 }
 
 
 
       
 // TESTO JUMBOTRON
-
 @media (max-width: 599px) {
     .jumbo_text {
 
