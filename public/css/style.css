@@ -43,46 +43,22 @@
 =============================================*/
 /*=====  End of Section Mediaquery comment block  ======*/
 /*=============================================
+    =            Section LISTS           =
+==============================================*/
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*=====  End of Section LISTS  ======*/
+/*=====================================
+=             Section LINKS          =
+======================================*/
+/*=====  End of Section LINKS  ======*/
+/*=============================================
 =            Section INPUT RADIO           =
 =============================================*/
-label {
-  margin: 0;
-  cursor: pointer;
-}
-
-.radio_input {
-  visibility: hidden;
-}
-
-.radio_nuovo_input {
-  display: inline;
-  margin-top: 30px;
-  width: 1em;
-  height: 1em;
-  border-radius: 50%;
-  background-color: floralwhite;
-  background-clip: content-box;
-}
-.radio_nuovo_input:focus, .radio_nuovo_input:hover {
-  border: 1px solid darkgray;
-}
-
-.radio_nuovo_input::after {
-  content: "";
-  display: block;
-  width: 70%;
-  height: 70%;
-  background: rgb(68, 7, 7);
-  margin: 2px;
-  border-radius: 50%;
-  transform: scale(0);
-  transition: transform 0.2s;
-}
-
-.radio_input:checked + .radio_nuovo_input::after {
-  transform: scale(1);
-}
-
 /*=====  End of Section INPUT  ======*/
 /*=============================================
 =               Section SOCIAL ICON         =
@@ -91,75 +67,7 @@ label {
 /*========================================
 =            Section BUTTON         =
 ========================================*/
-.button {
-  display: inline-block;
-  outline: none;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  padding: 0.5em 2em 0.55em;
-  border-radius: 0.5em;
-  letter-spacing: 1px;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-}
-
-.button:hover, .button:focus {
-  color: black;
-  text-decoration: none;
-}
-
-.button:active {
-  position: relative;
-  top: 1px;
-  background-color: white;
-  color: black;
-}
-
-.orange {
-  color: floralwhite;
-  border: solid 1px rgb(218, 124, 12);
-  background: rgb(247, 141, 29);
-  background: -moz-linear-gradient(top, rgb(250, 165, 26), rgb(244, 122, 32));
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#faa51a", endColorstr="#f47a20");
-}
-
-.orange:hover {
-  background: #f47c20;
-  background: -moz-linear-gradient(top, rgb(248, 142, 17), rgb(240, 96, 21));
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f88e11", endColorstr="#f06015");
-}
-
-.orange:active {
-  color: black;
-  background: -moz-linear-gradient(top, rgb(244, 122, 32), rgb(250, 165, 26));
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f47a20", endColorstr="#faa51a");
-}
-
 /*=====  End of Section BUTTON ======*/
-/*=============================================
-    =            Section LISTS           =
-==============================================*/
-ul {
-  list-style: none;
-}
-
-/*=====  End of Section LISTS  ======*/
-/*=====================================
-=             Section LINKS          =
-======================================*/
-a:hover {
-  color: black;
-}
-
-.my_links {
-  color: floralwhite;
-}
-.my_links:hover {
-  text-decoration: none;
-  color: rgb(250, 153, 28) !important;
-}
-
-/*=====  End of Section LINKS  ======*/
 /*=============================================
 =               Section SCROLLBARS          =
 ==============================================*/
@@ -203,149 +111,6 @@ a:hover {
 /*================================================
     =           Section CARD BUTTONS       =
 ================================================*/
-@media (min-width: 1300px) and (max-width: 1500px) {
-  .button {
-    font-size: 1.3vw !important;
-  }
-}
-@media (min-width: 992px) and (max-width: 1299px) {
-  .button {
-    font-size: 1rem !important;
-  }
-  .col-xl-4:first-child .button, .col-xl-4:last-child .button {
-    white-space: normal !important;
-  }
-}
-@media (min-width: 580px) and (max-width: 991px) {
-  .button {
-    padding: 0.5em 2em 0.55em;
-  }
-}
-@media (min-width: 471px) and (max-width: 579px) {
-  .button {
-    font-size: 1.15rem !important;
-    padding: 0.5em 0.55em;
-  }
-}
-@media (max-width: 470px) {
-  .button {
-    font-size: 1rem !important;
-    padding: 0.5em 0.55em;
-    white-space: normal !important;
-  }
-}
-.sliderContainer {
-  height: 560px;
-  width: 100%;
-}
-.sliderContainer .slider {
-  height: 560px;
-  width: 100%;
-}
-.sliderContainer .slider-track-container {
-  width: 390px;
-}
-.sliderContainer .slider-track {
-  padding: 0;
-  height: 100%;
-}
-.sliderContainer .slide {
-  padding: 0;
-  filter: drop-shadow(25px 10px 8px rgba(0, 0, 0, 0.2));
-  display: grid;
-  justify-items: center;
-  grid-template-columns: 390px;
-}
-.sliderContainer .slide img {
-  opacity: 20%;
-  filter: blur(3px);
-  transition: 0.5s linear;
-  visibility: hidden;
-}
-.sliderContainer .slide.selected img {
-  opacity: 1 !important;
-  filter: none !important;
-  visibility: visible;
-}
-.sliderContainer .btnC {
-  width: 40px;
-  height: 40px;
-  border: none;
-  border-radius: 50%;
-  z-index: 10px;
-  cursor: pointer;
-  background-color: #fff;
-  font-size: 18px;
-}
-.sliderContainer .btnC:active {
-  transform: scale(1.1);
-}
-.sliderContainer #btn-prev-position {
-  justify-self: end;
-  align-self: center;
-}
-.sliderContainer #btn-next-position {
-  justify-self: start;
-  align-self: center;
-}
-.sliderContainer .carousel_button {
-  color: floralwhite;
-  text-transform: uppercase;
-  background-color: transparent;
-  border: 2px solid rgba(255, 255, 240, 0.5);
-  border-radius: 4px;
-  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.1);
-  text-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
-  opacity: 1;
-  cursor: pointer;
-  transition: opacity 150ms ease, border 300ms ease-in-out;
-  line-height: 1;
-}
-.sliderContainer .carousel_button:hover {
-  outline: none;
-  border-color: white;
-}
-.sliderContainer .carousel_button:focus {
-  color: floralwhite;
-}
-
-.radiobuttonContainer {
-  position: relative;
-  left: 50%;
-  cursor: pointer;
-  transform: translateX(-50%);
-  margin-top: 2.5em;
-}
-
-#radiobuttonController {
-  text-align: center;
-}
-
-.carousel_bullet {
-  background-color: rgba(255, 250, 240, 0.5);
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  border: 2px solid transparent;
-  transition: all 200ms ease-in-out;
-  cursor: pointer;
-  line-height: 0;
-  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.1);
-  margin-right: 0.75em;
-}
-.carousel_bullet:focus {
-  outline: none;
-  background-color: floralwhite;
-}
-.carousel_bullet:hover {
-  outline: none;
-  border: 2px solid floralwhite;
-  background-color: rgba(255, 255, 240, 0.5);
-}
-.carousel_bullet:active {
-  background-color: floralwhite;
-}
-
 * {
   box-sizing: border-box;
   margin: 0px;
@@ -417,9 +182,45 @@ body header nav {
   grid-template-areas: ". navbar";
   align-items: center;
   background: black;
+  position: relative;
+}
+body header nav .nav_box {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  align-items: center;
 }
 body header nav ul {
+  height: 100%;
+}
+body header nav .background_layer {
   justify-content: space-evenly;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+}
+body header nav ul li {
+  height: 100%;
+  width: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+body header nav li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(https://iili.io/HaZ4Jfe.md.png);
+  background-blend-mode: overlay;
+  background-size: 20%;
+  background-position: center left;
+  opacity: 3%;
+  z-index: -10;
 }
 body header nav ul li > a {
   text-decoration: none;
@@ -429,6 +230,8 @@ body header nav ul li > a {
 }
 body header nav ul li > a:hover {
   text-decoration: underline;
+  color: rgb(255, 250, 240);
+  font-weight: bolder;
 }
 body main {
   grid-area: main;

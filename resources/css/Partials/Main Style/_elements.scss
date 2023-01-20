@@ -1,49 +1,88 @@
 /*=============================================
-=            Section INPUT RADIO           =
-=============================================*/
-label {
+    =            Section LISTS           =
+==============================================*/
+
+ul {
+    list-style: none;
     margin: 0;
-    cursor: pointer;
-}
-
-// Fa sparire i vecchi input radio
-.radio_input {
-    visibility: hidden;
+    padding: 0;
 }
 
 
-// Aspetto nuovo input esterno
-.radio_nuovo_input {
-    display: inline;
-    margin-top: 30px;
-    width: 1em;
-    height: 1em;
-    border-radius: 50%;
-    background-color: floralwhite;
-    background-clip: content-box;
+/*=====  End of Section LISTS  ======*/
+
+
+/*=====================================
+=             Section LINKS          =
+======================================*/
+
+@mixin links {
     
-    &:focus, &:hover {
-        border: 1px solid darkgray;
+    ul li > a {
+        text-decoration: none;
+        font-size: 1.2em;
+        color: map-get($color-map, text_color);
+        transition: 0.5s all ease;
+    }
+    
+    ul li > a:hover {
+        text-decoration: underline;
+        color: map-get($color-map, text_color);
+        font-weight: bolder;
     }
 }
 
-// Aspetto nuovo input interno
-.radio_nuovo_input::after {
-    content: "";
-    display: block;
-    width: 70%;
-    height: 70%;
-    background: map-get($color-map, background_color);
-    margin: 2px;
-    border-radius: 50%;
-    transform: scale(0);
-    transition: transform 0.2s;
-}
 
-// Selezione radio input seguente a quello checked
-.radio_input:checked + .radio_nuovo_input::after {
-    transform: scale(1);
-}
+/*=====  End of Section LINKS  ======*/
+
+
+
+/*=============================================
+=            Section INPUT RADIO           =
+=============================================*/
+// label {
+//     margin: 0;
+//     cursor: pointer;
+// }
+
+// // Fa sparire i vecchi input radio
+// .radio_input {
+//     visibility: hidden;
+// }
+
+
+// // Aspetto nuovo input esterno
+// .radio_nuovo_input {
+//     display: inline;
+//     margin-top: 30px;
+//     width: 1em;
+//     height: 1em;
+//     border-radius: 50%;
+//     background-color: floralwhite;
+//     background-clip: content-box;
+    
+//     &:focus, &:hover {
+//         border: 1px solid darkgray;
+//     }
+// }
+
+// // Aspetto nuovo input interno
+// .radio_nuovo_input::after {
+//     content: "";
+//     display: block;
+//     width: 70%;
+//     height: 70%;
+//     background: map-get($color-map, background_color);
+//     margin: 2px;
+//     border-radius: 50%;
+//     transform: scale(0);
+//     transition: transform 0.2s;
+// }
+
+// // Selezione radio input seguente a quello checked
+// .radio_input:checked + .radio_nuovo_input::after {
+//     transform: scale(1);
+// }
 
 
 /*=====  End of Section INPUT  ======*/
@@ -53,24 +92,24 @@ label {
 =               Section SOCIAL ICON         =
 ==============================================*/
 
-@mixin social_icons {
-    .icon {
-        color:map-get($color-map, links_color);
-        margin-right: 10px;
-        font-size: 1.2rem !important;
-    }
+// @mixin social_icons {
+//     .icon {
+//         color:map-get($color-map, links_color);
+//         margin-right: 10px;
+//         font-size: 1.2rem !important;
+//     }
 
-    .span {
-        margin: 0;
-        padding: 0;
-        height: 100%;
-        width: 100%; 
-        // font-family: "Open Sans", sans-serif;
-        text-align: left;
-        line-height: 1.5;
-        color: map-get($color-map, text_color);  
-    }
-}
+//     .span {
+//         margin: 0;
+//         padding: 0;
+//         height: 100%;
+//         width: 100%; 
+//         // font-family: "Open Sans", sans-serif;
+//         text-align: left;
+//         line-height: 1.5;
+//         color: map-get($color-map, text_color);  
+//     }
+// }
 
 
 /*=====  End of Section SOCIAL ICON  ======*/
@@ -80,93 +119,59 @@ label {
 /*========================================
 =            Section BUTTON         =
 ========================================*/
-.button {
-    display: inline-block;
-	outline: none;
-	cursor: pointer;
-	text-align: center;
-	text-decoration: none;
-	padding: 0.5em 2em 0.55em;
-	-webkit-border-radius: 0.5em; 
-	-moz-border-radius: 0.5em;
-	border-radius: 0.5em;
-    letter-spacing: 1px;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-}
+// .button {
+//     display: inline-block;
+// 	outline: none;
+// 	cursor: pointer;
+// 	text-align: center;
+// 	text-decoration: none;
+// 	padding: 0.5em 2em 0.55em;
+// 	-webkit-border-radius: 0.5em; 
+// 	-moz-border-radius: 0.5em;
+// 	border-radius: 0.5em;
+//     letter-spacing: 1px;
+//     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+// }
 
-.button:hover, .button:focus {
-    color: black;
-    text-decoration: none;
-}
+// .button:hover, .button:focus {
+//     color: black;
+//     text-decoration: none;
+// }
 
-.button:active {
-    position: relative;
-	top: 1px;
-    background-color: white;
-    color: black;
-}
+// .button:active {
+//     position: relative;
+// 	top: 1px;
+//     background-color: white;
+//     color: black;
+// }
 
-.orange {
-	color: floralwhite;
-	border: solid 1px rgb(218, 124, 12);
-	background: rgb(247, 141, 29);
-	background: -webkit-gradient(linear, left top, left bottom, from(rgb(250, 165, 26)), to(rgb(244, 122, 32)));
-	background: -moz-linear-gradient(top,  rgb(250, 165, 26),  rgb(244, 122, 32));
-	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#faa51a', endColorstr='#f47a20');
-}
+// .orange {
+// 	color: floralwhite;
+// 	border: solid 1px rgb(218, 124, 12);
+// 	background: rgb(247, 141, 29);
+// 	background: -webkit-gradient(linear, left top, left bottom, from(rgb(250, 165, 26)), to(rgb(244, 122, 32)));
+// 	background: -moz-linear-gradient(top,  rgb(250, 165, 26),  rgb(244, 122, 32));
+// 	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#faa51a', endColorstr='#f47a20');
+// }
 
-.orange:hover {
-	background: #f47c20;
-	background: -webkit-gradient(linear, left top, left bottom, from(rgb(248, 142, 17)), to(rgb(240, 96, 21)));
-	background: -moz-linear-gradient(top,  rgb(248, 142, 17),  rgb(240, 96, 21));
-	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f88e11', endColorstr='#f06015');
+// .orange:hover {
+// 	background: #f47c20;
+// 	background: -webkit-gradient(linear, left top, left bottom, from(rgb(248, 142, 17)), to(rgb(240, 96, 21)));
+// 	background: -moz-linear-gradient(top,  rgb(248, 142, 17),  rgb(240, 96, 21));
+// 	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f88e11', endColorstr='#f06015');
 
-}
+// }
 
-.orange:active {
-    color: black;
-	background: -webkit-gradient(linear, left top, left bottom, from(rgb(244, 122, 32)), to(rgb(250, 165, 26)));
-	background: -moz-linear-gradient(top,  rgb(244, 122, 32),  rgb(250, 165, 26));
-	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f47a20', endColorstr='#faa51a');
-}
+// .orange:active {
+//     color: black;
+// 	background: -webkit-gradient(linear, left top, left bottom, from(rgb(244, 122, 32)), to(rgb(250, 165, 26)));
+// 	background: -moz-linear-gradient(top,  rgb(244, 122, 32),  rgb(250, 165, 26));
+// 	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f47a20', endColorstr='#faa51a');
+// }
 
 
 /*=====  End of Section BUTTON ======*/
 
-
-/*=============================================
-    =            Section LISTS           =
-==============================================*/
-
-ul {
-    list-style: none;
-}
-
-
-/*=====  End of Section LISTS  ======*/
-
-
-
-/*=====================================
-=             Section LINKS          =
-======================================*/
-
-    
-a:hover {
-    color: black;
-}
-
-.my_links {
-    color: floralwhite;
-    &:hover {
-        text-decoration: none;
-        color: rgb(250, 153, 28) !important;
-    }
-
-}
-
-
-/*=====  End of Section LINKS  ======*/
 
 
 
@@ -231,49 +236,49 @@ a:hover {
 
 
 // Card orizzontali
-@media (min-width: 1300px) and (max-width: 1500px) {
+// @media (min-width: 1300px) and (max-width: 1500px) {
 
-    .button {
-        font-size: 1.3vw !important;
+//     .button {
+//         font-size: 1.3vw !important;
        
-    }
-}   
+//     }
+// }   
 
-@media (min-width: 992px) and (max-width: 1299px) {
+// @media (min-width: 992px) and (max-width: 1299px) {
 
-    .button {
-        font-size: 1rem !important;
-    }
+//     .button {
+//         font-size: 1rem !important;
+//     }
     
-    .col-xl-4:first-child .button, .col-xl-4:last-child .button {
-        white-space: normal !important; 
-    }
-}   
+//     .col-xl-4:first-child .button, .col-xl-4:last-child .button {
+//         white-space: normal !important; 
+//     }
+// }   
 
 // Card vertcali
-@media (min-width: 580px) and (max-width: 991px) {
+// @media (min-width: 580px) and (max-width: 991px) {
 
-    .button {
-        padding: 0.5em 2em 0.55em;
-    }
-}   
+//     .button {
+//         padding: 0.5em 2em 0.55em;
+//     }
+// }   
 
-@media (min-width: 471px) and (max-width: 579px) {
+// @media (min-width: 471px) and (max-width: 579px) {
 
-    .button {
-        font-size: 1.15rem !important;
-        padding: 0.5em 0.55em;
-    }
-}   
+//     .button {
+//         font-size: 1.15rem !important;
+//         padding: 0.5em 0.55em;
+//     }
+// }   
 
-@media (max-width: 470px) {
+// @media (max-width: 470px) {
 
-    .button {
-        font-size: 1rem !important;
-        padding: 0.5em 0.55em;
-        white-space: normal !important;
-    }
-}   
+//     .button {
+//         font-size: 1rem !important;
+//         padding: 0.5em 0.55em;
+//         white-space: normal !important;
+//     }
+// }   
 
 
 

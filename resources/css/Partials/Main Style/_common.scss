@@ -21,6 +21,12 @@ $color-map: (
 
 );
 
+// Sezioni
+// @mixin sezioni {
+//     margin: 0;
+//     padding: 0 0 45px 0;
+// }
+
 // // Bar
 // @mixin barra {
 //     .ink-bar {
@@ -29,14 +35,6 @@ $color-map: (
 //         background: map-get($color-map, background_bar_color);
 //     }
 // }
-
-
-
-// Sezioni
-@mixin sezioni {
-    margin: 0;
-    padding: 0 0 45px 0;
-}
 
 
 // Titoli principali
