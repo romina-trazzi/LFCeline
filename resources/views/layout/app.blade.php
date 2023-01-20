@@ -46,7 +46,7 @@
 
         <div id="app">
 
-            <div class="container_70">
+            <div class="my_container">
 
                 <header>
 

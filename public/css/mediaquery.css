@@ -2,6 +2,11 @@
 /*=============================================
 =            Section comment block            =
 =============================================*/
+@media (max-width: 800px) {
+  .my_container {
+    width: 80% !important;
+  }
+}
 @media (max-width: 599px) {
   .jumbo_box {
     grid-template-columns: 100% !important;
@@ -16,7 +21,13 @@
     grid-template-areas: "celineimg" "celinemaintext" !important;
   }
 }
-@media (min-width: 800px) and (max-width: 999px) {
+@media (max-width: 599px) {
+  li::before {
+    content: "";
+    display: none !important;
+  }
+}
+@media (max-width: 999px) {
   nav li > a {
     font-size: 1em !important;
   }
@@ -42,15 +53,13 @@
     display: none !important;
   }
 }
-@media (min-width: 600px) {
-  .jumbo_text {
-    padding-top: 30px !important;
-  }
-}
 @media (min-width: 600px) and (max-width: 799px) {
   .jumbo_text h1 {
-    font-size: 7vw !important;
+    font-size: 5vw !important;
     text-align: center !important;
+  }
+  .jumbo_text .jumbo_text {
+    padding-top: 10px !important;
   }
   .jumbo_text h3 {
     font-size: 2.7vw !important;
@@ -59,7 +68,11 @@
 }
 @media (min-width: 800px) and (max-width: 999px) {
   .jumbo_text h1 {
-    font-size: 7vw !important;
+    font-size: 5vw !important;
+    text-align: center !important;
+  }
+  .jumbo_text .jumbo_text {
+    padding-top: 10px !important;
   }
   .jumbo_text h3 {
     font-size: 2.5vw !important;
@@ -76,6 +89,13 @@
 @media (min-width: 1200px) {
   .jumbo_text {
     padding-top: 0px !important;
+  }
+}
+@media (max-width: 599px) {
+  .my_jumbotron .jumbo_img img {
+    max-height: 300px;
+    max-width: 200px !important;
+    width: 90% !important;
   }
 }
 @media (max-width: 1199px) {

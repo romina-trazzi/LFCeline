@@ -21,6 +21,24 @@ $color-map: (
 
 );
 
+$font-size-map: (
+
+  //Small values
+  "small_1": 2vw,
+  "small_2": 2.5vw,
+  "small_3": 3vw,
+
+  // Medium values
+  "medium_1": 4vw,
+  "medium_2": 4.5vw,
+  "medium_3": 5vw,
+
+  // Big values
+  "big_1": 6vw,
+  "big_2": 6.5vw,
+  "big_3": 7vw
+);
+
 // Sezioni
 // @mixin sezioni {
 //     margin: 0;
