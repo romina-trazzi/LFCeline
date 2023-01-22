@@ -111,6 +111,179 @@ ul {
 /*================================================
     =           Section CARD BUTTONS       =
 ================================================*/
+/*=============================================
+=            Section DESKTOP CODE           =
+=============================================*/
+@media (min-width: 500px) {
+  nav {
+    height: 100px;
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 22% auto;
+    grid-template-rows: auto;
+    grid-template-areas: ". navbar";
+    align-items: center;
+    background: black;
+    position: relative;
+    /*----------  Subsection LIST ITEM  ----------*/
+    /*----------  End Subsection LIST ITEM  ----------*/
+  }
+  nav ul li > a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: rgb(255, 250, 240);
+    transition: 0.5s all ease;
+  }
+  nav ul li > a:hover {
+    text-decoration: underline;
+    color: rgb(255, 250, 240);
+    font-weight: bolder;
+  }
+  nav .nav_box {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    align-items: center;
+  }
+  nav .nav_box .menu_btn {
+    display: none;
+  }
+  nav .menu_icon {
+    display: none;
+  }
+  nav .background_layer {
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+  }
+  nav ul {
+    height: 100%;
+  }
+  nav ul li {
+    height: 100%;
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  nav li::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(https://iili.io/HaZ4Jfe.md.png);
+    background-blend-mode: overlay;
+    background-size: 20%;
+    background-position: center left;
+    opacity: 3%;
+    z-index: -10;
+  }
+}
+/*=====  End of Section comment block  ======*/
+/*=============================================
+=             Section MOBILE CODE          =
+=============================================*/
+@media (max-width: 499px) {
+  nav {
+    background: black;
+    width: 100%;
+    margin: 0;
+  }
+  ul li > a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: rgb(255, 250, 240);
+    transition: 0.5s all ease;
+  }
+  ul li > a:hover {
+    text-decoration: underline;
+    color: rgb(255, 250, 240);
+    font-weight: bolder;
+  }
+  .nav_box {
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .my_nav .menu_btn {
+    display: none;
+  }
+  /*----------  Subsection LIST ITEM  ----------*/
+  .my_nav ul {
+    height: 100%;
+    width: 100%;
+  }
+  .my_nav ul li {
+    height: 100%;
+  }
+  .my_nav li a {
+    display: block;
+    padding: 12px;
+  }
+  .my_nav li a:hover {
+    background-color: rgb(33, 33, 33);
+  }
+  /*----------  End Subsection LIST ITEM  ----------*/
+  /*----------  Subsection HAMBURGER  ----------*/
+  .my_nav .menu_icon {
+    padding: 28px 20px;
+    position: relative;
+    cursor: pointer;
+  }
+  .my_nav .menu_icon .nav_icon {
+    background-color: rgb(251, 251, 251);
+    display: block;
+    width: 18px;
+    height: 2px;
+    position: relative;
+    transition: background-color all 0.2s ease-out;
+  }
+  .my_nav .menu_icon .nav_icon:before,
+  .my_nav .menu_icon .nav_icon:after {
+    content: "";
+    background-color: rgb(251, 251, 251);
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: background-color all 0.2s ease-out;
+  }
+  .my_nav .menu_icon .nav_icon:before {
+    top: 5px;
+  }
+  .my_nav .menu_icon .nav_icon:after {
+    top: -5px;
+  }
+  /*----------  End Subsection HAMBURGER  ----------*/
+  .my_nav .menu_list {
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+  }
+  .my_nav .menu_btn:checked ~ .menu_list {
+    max-height: 240px;
+  }
+  /*----------  Subsection X ----------*/
+  .my_nav .menu_btn:checked ~ .menu_icon > .nav_icon:before {
+    transform: rotate(45deg);
+    top: 0;
+  }
+  .my_nav .menu_btn:checked ~ .menu_icon > .nav_icon:after {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+  .my_nav .menu_btn:checked ~ .menu_icon > .nav_icon {
+    background-color: transparent;
+  }
+  /*----------  End Subsection X ----------*/
+}
+/*=====  End of Section comment block  ======*/
 * {
   box-sizing: border-box;
   margin: 0px;
@@ -172,71 +345,6 @@ body header .my_jumbotron .jumbo_box .jumbo_text h1 {
 body header .my_jumbotron .jumbo_box .jumbo_text h3 {
   font-size: 2rem;
   font-family: "Caveat", "cursive";
-}
-body header nav {
-  height: 100px;
-  width: 100%;
-  margin: auto;
-  display: grid;
-  grid-template-columns: 22% auto;
-  grid-template-rows: auto;
-  grid-template-areas: ". navbar";
-  align-items: center;
-  background: black;
-  position: relative;
-}
-body header nav .nav_box {
-  height: 100%;
-  display: grid;
-  grid-template-columns: 100%;
-  align-items: center;
-}
-body header nav ul {
-  height: 100%;
-}
-body header nav .background_layer {
-  justify-content: space-around;
-  height: 100%;
-  width: 100%;
-  position: relative;
-  z-index: 10;
-}
-body header nav ul li {
-  height: 100%;
-  width: 100px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-body header nav li::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: url(https://iili.io/HaZ4Jfe.md.png);
-  background-blend-mode: overlay;
-  background-size: 20%;
-  background-position: center left;
-  opacity: 3%;
-  z-index: -10;
-  display: block;
-}
-body header nav ul li > a {
-  text-decoration: none;
-  font-size: 1.2em;
-  color: rgb(255, 250, 240);
-  transition: 0.5s all ease;
-}
-body header nav ul li > a:hover {
-  text-decoration: underline;
-  color: rgb(255, 250, 240);
-  font-weight: bolder;
-}
-body header nav li.make_visible::before {
-  display: block !important;
 }
 body main {
   grid-area: main;

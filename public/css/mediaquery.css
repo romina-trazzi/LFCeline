@@ -21,7 +21,7 @@
     grid-template-areas: "celineimg" "celinemaintext" !important;
   }
 }
-@media (max-width: 599px) {
+@media (max-width: 699px) {
   li::before {
     content: "";
     display: none !important;
@@ -30,16 +30,6 @@
 @media (max-width: 999px) {
   nav li > a {
     font-size: 1em !important;
-  }
-}
-@media (max-width: 1199px) {
-  nav {
-    margin: auto;
-    display: grid;
-    grid-template-columns: 100% !important;
-    grid-template-rows: 0% !important;
-    grid-template-areas: "navbar" !important;
-    align-items: center;
   }
 }
 @media (max-width: 599px) {

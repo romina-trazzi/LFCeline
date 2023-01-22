@@ -1,0 +1,226 @@
+/*=============================================
+=            Section DESKTOP CODE           =
+=============================================*/
+
+@media (min-width: 500px) {
+    nav {
+        height: 100px;
+        width: 100%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 22% auto;
+        grid-template-rows: auto;
+        grid-template-areas: ". navbar";
+        align-items: center;
+        background: map-get($color-map, background_bar_color);
+        position: relative;
+
+        @include links;
+
+        .nav_box {
+            height: 100%;
+            display: grid;
+            grid-template-columns: 100%;
+            align-items: center;
+        }
+
+        // Checkbox invisibile
+        .nav_box .menu_btn {
+            display: none;
+        }
+
+        // X invisibile
+        .menu_icon {
+            display: none;
+        }
+
+        /*----------  Subsection LIST ITEM  ----------*/
+
+        
+        // Mette i li in orizzontale
+        .background_layer {
+            display: flex;
+            justify-content: space-around;
+            height: 100%;
+            width: 100%;
+            position: relative;
+            z-index: 10;
+        }
+
+       
+        ul {
+            height: 100%;
+        }
+
+        // Centra i Li rispetto alle macchie d'inchiostro
+        ul li {
+            height: 100%;
+            width: 100px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+            
+        li::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url(https://iili.io/HaZ4Jfe.md.png);
+            // background-image: url(https://iili.io/HapiOlV.md.png);
+            background-blend-mode: overlay;
+            background-size: 20%;
+            background-position: center left;
+            opacity: 3%;
+            z-index: -10;
+        }
+        
+        
+        //     li.make_visible::before {
+        //         display:block !important;
+        //     }
+        
+        //
+
+        
+        /*----------  End Subsection LIST ITEM  ----------*/
+    }
+         
+}
+
+/*=====  End of Section comment block  ======*/
+
+
+
+/*=============================================
+=             Section MOBILE CODE          =
+=============================================*/
+
+@media (max-width: 499px) {
+
+    nav {
+        background: map-get($color-map, background_bar_color);
+        width: 100%;
+        margin: 0;
+    }
+
+    @include links;
+
+    .nav_box {
+        height: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    // Checkbox invisibile
+    .my_nav .menu_btn {
+        display: none;
+    }
+
+
+    /*----------  Subsection LIST ITEM  ----------*/
+
+    .my_nav ul {
+        height: 100%;
+        width: 100%;
+    }
+
+    .my_nav ul li {
+        height: 100%;
+    }
+
+    .my_nav li a {
+        display: block;
+        padding: 12px;
+    }
+
+    .my_nav li a:hover {
+        background-color: map-get($color-map, background_link);
+    }
+
+    /*----------  End Subsection LIST ITEM  ----------*/
+
+
+    /*----------  Subsection HAMBURGER  ----------*/
+
+    .my_nav .menu_icon {
+        padding: 28px 20px;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .my_nav .menu_icon .nav_icon {
+        background-color: map-get($color-map, primary_color);
+        display: block;
+        width: 18px;
+        height: 2px;
+        position: relative;
+        transition: background-color all 0.2s ease-out;
+    }
+
+    .my_nav .menu_icon .nav_icon:before,
+    .my_nav .menu_icon .nav_icon:after  {
+        content: "";
+        background-color: map-get($color-map, primary_color);
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        transition: background-color all 0.2s ease-out;
+    }
+
+
+    .my_nav .menu_icon .nav_icon:before {
+        top: 5px;
+    }
+
+    .my_nav .menu_icon .nav_icon:after {
+        top: -5px;
+    }
+
+
+    /*----------  End Subsection HAMBURGER  ----------*/
+
+
+    // Transizione del menù mobile
+    .my_nav .menu_list {
+        max-height: 0;
+        transition: max-height 0.2s ease-out;
+    }
+
+
+    // Quando la checkbox è checked cambia l'altezza della menù list
+    .my_nav .menu_btn:checked ~ .menu_list {
+        max-height: 240px;
+    }
+
+
+    /*----------  Subsection X ----------*/
+
+    .my_nav .menu_btn:checked ~ .menu_icon > .nav_icon:before {
+        transform: rotate(45deg);
+        top: 0;
+    }
+
+    .my_nav .menu_btn:checked ~ .menu_icon > .nav_icon:after {
+        transform: rotate(-45deg);
+        top: 0;
+    }
+    
+    // Invisibile terza barretta
+    .my_nav .menu_btn:checked ~ .menu_icon > .nav_icon {
+        background-color: transparent;
+    }
+
+    /*----------  End Subsection X ----------*/
+
+}
+
+/*=====  End of Section comment block  ======*/
+
+
+
+
