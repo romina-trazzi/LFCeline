@@ -195,7 +195,7 @@ body header nav ul {
   height: 100%;
 }
 body header nav .background_layer {
-  justify-content: space-evenly;
+  justify-content: space-around;
   height: 100%;
   width: 100%;
   position: relative;

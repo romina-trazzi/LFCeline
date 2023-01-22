@@ -127,7 +127,7 @@ body {
             }
 
             .background_layer {
-                justify-content: space-evenly;
+                justify-content: space-around;
                 height: 100%;
                 width: 100%;
                 position: relative;
@@ -178,6 +178,7 @@ body {
 
 
 
+    
 
 
 
@@ -186,6 +187,14 @@ body {
 
 
 
+
+
+
+
+
+
+
+    
     main {
         grid-area: main;
         background-color: lightgreen;

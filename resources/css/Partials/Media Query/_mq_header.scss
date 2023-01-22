@@ -11,7 +11,6 @@
 
 }
 
-
 // LAYOUT INTERNO 
 @media (max-width: 599px) {
     // Layout interno
@@ -105,7 +104,6 @@
     } 
 }
 
-
 @media (min-width: 800px) and (max-width: 999px) {
 
     .jumbo_text {
@@ -149,7 +147,7 @@
 
 
 // IMMAGINE
-@media (max-width: 599px) {
+@media (max-width: 699px) {
     .my_jumbotron {
 
         .jumbo_img {
@@ -168,8 +166,6 @@
 }
 
 // IMMAGINE + TESTO JUMBOTRON
-
-
 @media (max-width: 1199px) {
     .my_jumbotron {
 
