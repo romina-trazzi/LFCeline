@@ -293,7 +293,6 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 body .my_container {
-  height: 100vh;
   width: 70%;
   padding: 0;
   margin: 0 auto;
@@ -346,8 +345,19 @@ body main {
   background-image: url("https://iili.io/HlIZMhX.md.png");
   background-repeat: no-repeat;
   background-size: cover;
+  height: 800px;
 }
 body footer {
   grid-area: footer;
   background-color: black;
+  height: 100px;
+  color: rgb(255, 250, 240);
+}
+body footer p {
+  margin: 0;
+  height: 100%;
+}
+body footer p small {
+  font-size: 1rem;
+  font-family: "Caveat", "cursive";
 }
