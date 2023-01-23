@@ -23,9 +23,7 @@ body {
     // Background & Typhography
     background: map-get($color-map, background_color);
     background: radial-gradient(circle, rgba(68,7,7,1) 50%, rgba(49,5,5,1) 75%, rgba(24,2,2,1) 99%, rgba(0,0,0,1) 100%);
-    overflow-x: hidden;
     font-family: 'Montserrat', sans-serif;
-    color: black;
 
     // Container
     .my_container {
@@ -103,43 +101,31 @@ body {
             }
         }
 
-        
-
-        
-        
-          
-
     }
     
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     
     main {
         grid-area: main;
-        background-color: lightgreen;
+        // background-image: url("https://iili.io/Hlz2ZIR.md.png");
+        background-image: url("https://iili.io/HlIZMhX.md.png");
+        background-repeat: no-repeat;
+        background-size: cover;
 
     }
 
     footer {
         grid-area: footer;
-        background-color: coral;
+        background-color: black;
+
+        // Text
+        color: map-get($color-map, link_color);
+
+        p > span {
+                font-size: 2rem;
+                font-family: 'Caveat', 'cursive';
+
+            }
+        }
     }
 
 }

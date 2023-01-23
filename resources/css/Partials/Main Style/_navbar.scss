@@ -2,7 +2,7 @@
 =            Section DESKTOP CODE           =
 =============================================*/
 
-@media (min-width: 500px) {
+@media (min-width: 700px) {
     nav {
         height: 100px;
         width: 100%;
@@ -99,10 +99,10 @@
 =             Section MOBILE CODE          =
 =============================================*/
 
-@media (max-width: 499px) {
+@media (max-width: 699px) {
 
     nav {
-        background: map-get($color-map, background_bar_color);
+        background: map-get($color-map, hover_color);
         width: 100%;
         margin: 0;
     }

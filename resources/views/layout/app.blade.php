@@ -58,15 +58,12 @@
 
                 <main>
 
-                    <h1> Main <h1>
                     @yield('content')
 
                 </main>
 
                 
                 <footer> 
-                    <h1> Footer </h1>
-                    @include('layout.navdown')
                     @include('layout.footer')   
 
                 </footer>

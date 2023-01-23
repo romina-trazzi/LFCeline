@@ -114,7 +114,7 @@ ul {
 /*=============================================
 =            Section DESKTOP CODE           =
 =============================================*/
-@media (min-width: 500px) {
+@media (min-width: 700px) {
   nav {
     height: 100px;
     width: 100%;
@@ -190,9 +190,9 @@ ul {
 /*=============================================
 =             Section MOBILE CODE          =
 =============================================*/
-@media (max-width: 499px) {
+@media (max-width: 699px) {
   nav {
-    background: black;
+    background: rgb(33, 33, 33);
     width: 100%;
     margin: 0;
   }
@@ -226,9 +226,6 @@ ul {
   .my_nav li a {
     display: block;
     padding: 12px;
-  }
-  .my_nav li a:hover {
-    background-color: rgb(33, 33, 33);
   }
   /*----------  End Subsection LIST ITEM  ----------*/
   /*----------  Subsection HAMBURGER  ----------*/
@@ -293,9 +290,7 @@ ul {
 body {
   background: rgb(68, 7, 7);
   background: radial-gradient(circle, rgb(68, 7, 7) 50%, rgb(49, 5, 5) 75%, rgb(24, 2, 2) 99%, rgb(0, 0, 0) 100%);
-  overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
-  color: black;
 }
 body .my_container {
   height: 100vh;
@@ -348,9 +343,11 @@ body header .my_jumbotron .jumbo_box .jumbo_text h3 {
 }
 body main {
   grid-area: main;
-  background-color: lightgreen;
+  background-image: url("https://iili.io/HlIZMhX.md.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 body footer {
   grid-area: footer;
-  background-color: coral;
+  background-color: black;
 }

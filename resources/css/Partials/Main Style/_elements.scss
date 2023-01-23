@@ -21,13 +21,13 @@ ul {
     ul li > a {
         text-decoration: none;
         font-size: 1.2em;
-        color: map-get($color-map, text_color);
+        color: map-get($color-map, links_color);
         transition: 0.5s all ease;
     }
     
     ul li > a:hover {
         text-decoration: underline;
-        color: map-get($color-map, text_color);
+        color: map-get($color-map, links_color);
         font-weight: bolder;
     }
 }
