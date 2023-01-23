@@ -77,6 +77,10 @@
             opacity: 3%;
             z-index: -10;
         }
+
+        ul a:hover {
+            background-color: map-get($color-map, hover_color);
+        }
         
         
         //     li.make_visible::before {

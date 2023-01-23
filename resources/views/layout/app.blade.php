@@ -78,7 +78,7 @@
 
     <!-- Javascript files -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <script src= "{{asset('js/bootstrap.js')}}" type="text/Javascript"> </script>
+    <script src= "{{asset('js/bootstrap.js')}}" type="/module"> </script>
     <script src= "{{asset('js/main_vue.js')}}" type="text/Javascript"> </script>
 
 </html>

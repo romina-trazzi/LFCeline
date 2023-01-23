@@ -293,7 +293,7 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 body .my_container {
-  width: 70%;
+  width: 60%;
   padding: 0;
   margin: 0 auto;
   background-color: rgb(251, 251, 251);
@@ -322,7 +322,7 @@ body header .my_jumbotron .jumbo_box .jumbo_img {
 body header .my_jumbotron .jumbo_box .jumbo_img img {
   width: auto;
   max-height: 300px;
-  max-width: 255px;
+  max-width: 200px;
 }
 body header .my_jumbotron .jumbo_box .jumbo_text {
   grid-area: celinemaintext;
