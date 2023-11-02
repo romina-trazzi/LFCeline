@@ -58,7 +58,11 @@
 
                 <main>
 
+                    <hr class="section_bar">
+
                     @yield('content')
+
+                    <hr class="section_bar">
 
                 </main>
 

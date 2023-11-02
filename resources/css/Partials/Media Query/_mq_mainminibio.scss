@@ -1,0 +1,216 @@
+@media (max-width: 799px) {
+
+    main {
+
+        .mini_bio {
+            
+            // Minibio - Layout interno
+            display: grid;
+            grid-template-columns: 20px auto 20px !important;
+            grid-template-rows: auto auto !important;
+            grid-template-areas: 
+                ". celineminibioimg ."
+                ". celineminibiotext ." !important;
+            
+
+            // Testo Minibio
+            .mini_bio_text {
+                grid-area: celineminibiotext;
+                grid-column: 2/3 !important;
+                width: 100%;
+                
+                p {
+                    margin-top: 20px;
+                    font-size: 0.8rem;
+                    text-align: justify;
+                }
+            }
+
+
+            // Immagine minibio
+            .mini_bio_img {
+                grid-area: celineminibioimg;
+                grid-column: 2/3 !important;
+                justify-self: center !important;
+
+                img {
+                    width: 100% !important;
+                    max-width: 250px !important;
+                    min-width: 180px;
+                    height: auto;                      
+                }
+
+            }
+            
+        }
+
+    }
+
+}
+
+@media (min-width: 800px) and (max-width: 999px) {
+
+    main {
+
+        .mini_bio {
+
+            // Minibio - Layout interno
+            display: grid;
+            grid-template-columns: 20px auto 20px auto 20px;
+            grid-template-rows: auto auto !important;
+            grid-template-areas: 
+                ". celineminibiotext . celineminibioimg ."
+                ". celineminibiotextlong celineminibiotextlong celinebiotextlong ." !important;
+            
+            p {
+                font-size: 0.85rem !important;
+                margin-bottom: 0;
+            }
+
+            .mini_bio_text {
+                grid-area: celineminibiotext;
+                grid-column: 2 / 3;
+                width: 100%;
+                
+            }
+
+            .mini_bio_text_long {
+                grid-area: celineminibiotextlong;
+                grid-column: 2 / 5 !important;
+
+                p {
+                    margin-top: 20px !important;
+                }
+            }
+
+
+            // Immagine minibio
+            .mini_bio_img {
+
+                img {
+                    width: 100% !important;
+                    max-width: 250px !important;
+                    min-width: 180px;
+                    height: auto;                      
+                }
+            }
+        }
+    }
+
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+
+    main {
+
+        .mini_bio {
+
+            // Testo minibio
+            .mini_bio_text {
+
+                p {
+                    font-size: 0.9rem !important;
+                }
+            }
+            
+
+            // Immagine minibio
+            .mini_bio_img {
+
+                img {
+                    width: 100% !important;
+                    max-width: 300px !important;
+                    min-width: 180px;
+                    height: auto;                      
+                }
+            }
+
+        }
+            
+           
+    }
+    
+}
+
+@media (min-width: 1300px) and (max-width: 1550px) {
+
+    main {
+
+        .mini_bio {
+
+            // Immagine minibio
+            .mini_bio_img {
+
+                img {
+                    width: 100% !important;
+                    max-width: 250px !important;
+                    min-width: 180px;
+                    height: auto;                      
+                }
+            }
+
+        }
+            
+           
+    }
+
+}
+
+@media (min-width: 1551px) {
+
+    main {
+
+
+
+        .mini_bio {
+
+             // Minibio - Layout interno
+             display: grid;
+             grid-template-columns: 20px auto 20px auto 20px;
+             grid-template-rows: auto auto !important;
+             grid-template-areas: 
+                ". celineminibiotext . celineminibioimg ."
+                ". celineminibiotext celineminibiotext celinebiotext ." !important;
+
+
+
+            // Testo minibio 
+            p {
+                font-size: 0.85rem;
+                margin-bottom: 0;
+
+
+            }
+
+            .mini_bio_text {
+                grid-area: celineminibiotext;
+                grid-column: 2 / 3;
+                width: 100%;
+                
+             
+            }
+
+            .mini_bio_text_long {
+                grid-area: celineminibiotext;
+                grid-row: 3/4;
+                grid-column: 2/5;
+            }
+
+            // Immagine minibio
+            .mini_bio_img {
+
+                img {
+                    width: 100% !important;
+                    max-width: 480px !important;
+                    min-width: 180px;
+                    height: auto;                      
+                }
+            }
+
+        }
+            
+           
+    }
+
+}
+

@@ -8,8 +8,10 @@ $color-map: (
   
 
   // Accent
-  "hover_color": rgb(18, 18, 18),
+  "hover_color": rgb(33, 33, 33),
+  "nav_color": rgb(18, 18, 18),
   "links_color": rgb(255,250,240),
+  "hr_color": rgb(141, 139, 139),
   // "text_color": 
   // "title_color": 
 
@@ -38,6 +40,9 @@ $font-size-map: (
   "big_2": 6.5vw,
   "big_3": 7vw
 );
+
+
+
 
 // Sezioni
 // @mixin sezioni {

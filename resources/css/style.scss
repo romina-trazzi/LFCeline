@@ -21,7 +21,7 @@
 body {
     
     // Background & Typhography
-    background: map-get($color-map, background_color);
+    background: map-get($color-map, primary_color);
     background: radial-gradient(circle, rgba(68,7,7,1) 50%, rgba(49,5,5,1) 75%, rgba(24,2,2,1) 99%, rgba(0,0,0,1) 100%);
     font-family: 'Montserrat', sans-serif;
 
@@ -64,7 +64,6 @@ body {
 
 
                 .jumbo_img {
-
                     grid-area: celineimg;
 
                     img {
@@ -79,8 +78,7 @@ body {
                     grid-area: celinemaintext;
                     padding-top: 30px;
                     
-                    h1, h3 {
-                        
+                    h1, h3 {                       
                         margin: 0;
                         padding: 0;
                     }
@@ -103,21 +101,87 @@ body {
 
     }
     
-    
     main {
         grid-area: main;
         // background-image: url("https://iili.io/Hlz2ZIR.md.png");
-        background-image: url("https://iili.io/HlIZMhX.md.png");
+        // background-image: url("https://iili.io/HlIZMhX.md.png");
         background-repeat: no-repeat;
         background-size: cover;
 
-        height: 800px;
+        // HR  
+        .section_bar {
+            width: 70%;
+            text-align: "center";
+            margin: 50px auto 10px auto;
+            border: 2px solid map-get($color-map, background_bar_color);
+            border-radius: 3px;
+        }
+
+        hr.section_bar:nth-child(3), hr.section_bar:nth-child(5)  {
+            margin: 30px auto 50px auto;
+        }
 
 
 
-        //  Boostrap Cards
+        // HOME PAGE //
+        .quotation {
+            flex-direction: column;
+            align-items: center;
 
-    }
+            blockquote, figcaption {
+                font-family: 'Caveat', sans-serif;
+                width: 85%;
+                color: map-get($map: $color-map, $key: background_color);
+            }
+
+            figcaption {
+                text-align: center;
+            }
+
+        }
+
+        .mini_bio {
+
+            // Minibio - Layout interno
+            display: grid;
+            grid-template-columns: 20px auto 20px auto 20px;
+            grid-template-rows: auto;
+            grid-template-areas: 
+                ". celineminibiotext . celineminibioimg .";
+
+            .mini_bio_text {
+                grid-area: celineminibiotext;
+                grid-column: 2 / 3;
+                width: 100%;
+                
+                p {
+                    font-size: 0.85rem;
+                    margin-bottom: 0;
+    
+    
+                }
+            }
+
+            .mini_bio_img {
+                grid-area: celineminibioimg;
+                grid-column: 4 / 5;
+
+                img {
+                    width: 100%;
+                    max-width: 450px;
+                    min-width: 180px;
+                    height: auto;                      
+                }
+
+            }
+            
+
+            
+
+        }
+
+
+    }         
 
     footer {
         grid-area: footer;

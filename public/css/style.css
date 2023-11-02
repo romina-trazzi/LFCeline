@@ -124,7 +124,7 @@ ul {
     grid-template-rows: auto;
     grid-template-areas: ". navbar";
     align-items: center;
-    background: black;
+    background-color: black;
     position: relative;
     /*----------  Subsection LIST ITEM  ----------*/
     /*----------  End Subsection LIST ITEM  ----------*/
@@ -192,7 +192,7 @@ ul {
 =============================================*/
 @media (max-width: 699px) {
   nav {
-    background: rgb(33, 33, 33);
+    background-color: rgb(33, 33, 33);
     width: 100%;
     margin: 0;
   }
@@ -226,6 +226,9 @@ ul {
   .my_nav li a {
     display: block;
     padding: 12px;
+  }
+  .my_nav li a:hover {
+    background-color: rgb(18, 18, 18);
   }
   /*----------  End Subsection LIST ITEM  ----------*/
   /*----------  Subsection HAMBURGER  ----------*/
@@ -288,7 +291,7 @@ ul {
 }
 
 body {
-  background: rgb(68, 7, 7);
+  background: rgb(251, 251, 251);
   background: radial-gradient(circle, rgb(68, 7, 7) 50%, rgb(49, 5, 5) 75%, rgb(24, 2, 2) 99%, rgb(0, 0, 0) 100%);
   font-family: "Montserrat", sans-serif;
 }
@@ -342,10 +345,55 @@ body header .my_jumbotron .jumbo_box .jumbo_text h3 {
 }
 body main {
   grid-area: main;
-  background-image: url("https://iili.io/HlIZMhX.md.png");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 800px;
+}
+body main .section_bar {
+  width: 70%;
+  text-align: "center";
+  margin: 50px auto 10px auto;
+  border: 2px solid black;
+  border-radius: 3px;
+}
+body main hr.section_bar:nth-child(3), body main hr.section_bar:nth-child(5) {
+  margin: 30px auto 50px auto;
+}
+body main .quotation {
+  flex-direction: column;
+  align-items: center;
+}
+body main .quotation blockquote, body main .quotation figcaption {
+  font-family: "Caveat", sans-serif;
+  width: 85%;
+  color: rgb(68, 7, 7);
+}
+body main .quotation figcaption {
+  text-align: center;
+}
+body main .mini_bio {
+  display: grid;
+  grid-template-columns: 20px auto 20px auto 20px;
+  grid-template-rows: auto;
+  grid-template-areas: ". celineminibiotext . celineminibioimg .";
+}
+body main .mini_bio .mini_bio_text {
+  grid-area: celineminibiotext;
+  grid-column: 2/3;
+  width: 100%;
+}
+body main .mini_bio .mini_bio_text p {
+  font-size: 0.85rem;
+  margin-bottom: 0;
+}
+body main .mini_bio .mini_bio_img {
+  grid-area: celineminibioimg;
+  grid-column: 4/5;
+}
+body main .mini_bio .mini_bio_img img {
+  width: 100%;
+  max-width: 450px;
+  min-width: 180px;
+  height: auto;
 }
 body footer {
   grid-area: footer;

@@ -2,7 +2,7 @@
 /*=============================================
 =            Section comment block            =
 =============================================*/
-@media (max-width: 800px) {
+@media (max-width: 1199px) {
   .my_container {
     width: 80% !important;
   }
@@ -76,11 +76,12 @@
   }
   .jumbo_text h3 {
     font-size: 2.5vw !important;
+    text-align: center;
   }
 }
 @media (min-width: 1000px) and (max-width: 1199px) {
   .jumbo_text h1 {
-    font-size: 7vw !important;
+    font-size: 6.5vw !important;
   }
   .jumbo_text h3 {
     font-size: 2.3vw !important;
@@ -88,7 +89,16 @@
 }
 @media (min-width: 1200px) {
   .jumbo_text {
+    grid-area: celinemaintext;
     padding-top: 0px !important;
+    margin-left: 20px !important;
+  }
+  .jumbo_text h1 {
+    font-size: 5vw !important;
+  }
+  .jumbo_text h3 {
+    font-size: 2vw !important;
+    text-align: center;
   }
 }
 @media (max-width: 699px) {
@@ -124,17 +134,111 @@
   .my_jumbotron .jumbo_img img {
     width: 100% !important;
   }
-  .my_jumbotron .jumbo_text {
-    grid-area: celinemaintext;
-    padding-top: 0px !important;
-  }
-  .my_jumbotron .jumbo_text h1 {
-    font-size: 6vw !important;
-    margin-left: 20px !important;
-  }
-  .my_jumbotron .jumbo_text h3 {
-    font-size: 1.9vw !important;
-    margin-left: 20px !important;
-  }
 }
 /*=====  End of Section comment block  ======*/
+@media (max-width: 799px) {
+  main .mini_bio {
+    display: grid;
+    grid-template-columns: 20px auto 20px !important;
+    grid-template-rows: auto auto !important;
+    grid-template-areas: ". celineminibioimg ." ". celineminibiotext ." !important;
+  }
+  main .mini_bio .mini_bio_text {
+    grid-area: celineminibiotext;
+    grid-column: 2/3 !important;
+    width: 100%;
+  }
+  main .mini_bio .mini_bio_text p {
+    margin-top: 20px;
+    font-size: 0.8rem;
+    text-align: justify;
+  }
+  main .mini_bio .mini_bio_img {
+    grid-area: celineminibioimg;
+    grid-column: 2/3 !important;
+    justify-self: center !important;
+  }
+  main .mini_bio .mini_bio_img img {
+    width: 100% !important;
+    max-width: 250px !important;
+    min-width: 180px;
+    height: auto;
+  }
+}
+@media (min-width: 800px) and (max-width: 999px) {
+  main .mini_bio {
+    display: grid;
+    grid-template-columns: 20px auto 20px auto 20px;
+    grid-template-rows: auto auto !important;
+    grid-template-areas: ". celineminibiotext . celineminibioimg ." ". celineminibiotextlong celineminibiotextlong celinebiotextlong ." !important;
+  }
+  main .mini_bio p {
+    font-size: 0.85rem !important;
+    margin-bottom: 0;
+  }
+  main .mini_bio .mini_bio_text {
+    grid-area: celineminibiotext;
+    grid-column: 2/3;
+    width: 100%;
+  }
+  main .mini_bio .mini_bio_text_long {
+    grid-area: celineminibiotextlong;
+    grid-column: 2/5 !important;
+  }
+  main .mini_bio .mini_bio_text_long p {
+    margin-top: 20px !important;
+  }
+  main .mini_bio .mini_bio_img img {
+    width: 100% !important;
+    max-width: 250px !important;
+    min-width: 180px;
+    height: auto;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1200px) {
+  main .mini_bio .mini_bio_text p {
+    font-size: 0.9rem !important;
+  }
+  main .mini_bio .mini_bio_img img {
+    width: 100% !important;
+    max-width: 300px !important;
+    min-width: 180px;
+    height: auto;
+  }
+}
+@media (min-width: 1300px) and (max-width: 1550px) {
+  main .mini_bio .mini_bio_img img {
+    width: 100% !important;
+    max-width: 250px !important;
+    min-width: 180px;
+    height: auto;
+  }
+}
+@media (min-width: 1551px) {
+  main .mini_bio {
+    display: grid;
+    grid-template-columns: 20px auto 20px auto 20px;
+    grid-template-rows: auto auto !important;
+    grid-template-areas: ". celineminibiotext . celineminibioimg ." ". celineminibiotext celineminibiotext celinebiotext ." !important;
+  }
+  main .mini_bio p {
+    font-size: 0.85rem;
+    margin-bottom: 0;
+  }
+  main .mini_bio .mini_bio_text {
+    grid-area: celineminibiotext;
+    grid-column: 2/3;
+    width: 100%;
+  }
+  main .mini_bio .mini_bio_text_long {
+    grid-area: celineminibiotext;
+    grid-row: 3/4;
+    grid-column: 2/5;
+  }
+  main .mini_bio .mini_bio_img img {
+    width: 100% !important;
+    max-width: 480px !important;
+    min-width: 180px;
+    height: auto;
+  }
+}
