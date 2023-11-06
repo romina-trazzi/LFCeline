@@ -12,15 +12,16 @@ $color-map: (
   "nav_color": rgb(18, 18, 18),
   "links_color": rgb(255,250,240),
   "hr_color": rgb(141, 139, 139),
-  // "text_color": 
-  // "title_color": 
+  "title_color": rgb(68,7,7),
+  "text_color": red
 
-  // Trials
-  "trial1": rgb(1,42,51),
-  "trial2": rgb(136, 205, 221),
-  "trial5": rgb(244, 124, 32),
-  "trial6": rgb(250, 153, 28),
-  "trial7": rgb(209,191,142),
+);
+
+// Font family Map
+$font-family-map: (
+  "em": unquote('Dancing Script, cursive'),
+  "text": unquote('Caveat, cursive'),
+  "plain": unquote('Montserrat, sans-serif')
 );
 
 $font-size-map: (
@@ -50,14 +51,18 @@ $font-size-map: (
 //     padding: 0 0 45px 0;
 // }
 
-// // Bar
-// @mixin barra {
-//     .ink-bar {
-//         width: 100%;
-//         height: 100%;
-//         background: map-get($color-map, background_bar_color);
-//     }
-// }
+// Bar
+@mixin bar {
+  
+  .ink_bar {
+    width: 70%;
+    text-align: "center";
+    margin: 50px auto 10px auto;
+    border: 2px solid map-get($color-map, background_bar_color);
+    border-radius: 3px;
+  }
+
+}
 
 
 // Titoli principali

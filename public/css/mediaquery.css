@@ -207,38 +207,37 @@
   }
 }
 @media (min-width: 1300px) and (max-width: 1550px) {
+  main .mini_bio .mini_bio_text > p:nth-child(2) {
+    display: none;
+  }
+  main .mini_bio p {
+    font-size: 1rem !important;
+    margin-bottom: 0;
+  }
   main .mini_bio .mini_bio_img img {
     width: 100% !important;
     max-width: 250px !important;
     min-width: 180px;
     height: auto;
   }
-}
-@media (min-width: 1551px) {
-  main .mini_bio {
-    display: grid;
-    grid-template-columns: 20px auto 20px auto 20px;
-    grid-template-rows: auto auto !important;
-    grid-template-areas: ". celineminibiotext . celineminibioimg ." ". celineminibiotext celineminibiotext celinebiotext ." !important;
-  }
-  main .mini_bio p {
-    font-size: 0.85rem;
-    margin-bottom: 0;
-  }
-  main .mini_bio .mini_bio_text {
-    grid-area: celineminibiotext;
-    grid-column: 2/3;
-    width: 100%;
-  }
   main .mini_bio .mini_bio_text_long {
+    display: block !important;
     grid-area: celineminibiotext;
     grid-row: 3/4;
     grid-column: 2/5;
   }
+}
+@media (min-width: 1551px) {
+  main .mini_bio .mini_bio_text p, main .mini_bio .mini_bio_text h3 {
+    font-size: 1rem !important;
+  }
+  main .mini_bio .mini_bio_img {
+    grid-area: celineimg;
+  }
   main .mini_bio .mini_bio_img img {
-    width: 100% !important;
-    max-width: 480px !important;
-    min-width: 180px;
     height: auto;
+    width: 100%;
+    min-width: 180px;
+    max-width: 480px;
   }
 }

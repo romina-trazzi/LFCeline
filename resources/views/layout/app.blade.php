@@ -26,7 +26,6 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.min.css" type="text/css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"  type="text/css">
       
-
         <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -58,16 +57,17 @@
 
                 <main>
 
-                    <hr class="section_bar">
+                    <hr class="ink_bar">
 
                     @yield('content')
 
-                    <hr class="section_bar">
+                    <hr class="ink_bar">
 
                 </main>
 
                 
                 <footer> 
+                    
                     @include('layout.footer')   
 
                 </footer>

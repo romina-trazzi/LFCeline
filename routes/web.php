@@ -21,12 +21,12 @@ Route::get('home.php', function () {
     return view('pages.home');
 });
 
-Route::get('aboutCeline.php', function () {
-    return view('pages.aboutCeline');
-});
-
 Route::get('bookstore.php', function () {
     return view('pages.bookstore');
+});
+
+Route::get('gallery.php', function () {
+    return view('pages.gallery');
 });
 
 Route::get('contacts.php', function () {
