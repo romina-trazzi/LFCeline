@@ -39,7 +39,7 @@
     Il suo romanzo d'esordio, <em>"Viaggio al termine della notte"</em> (1932), fu un capolavoro letterario che rivoluzionò la narrativa contemporanea.<br>
     Quest'opera spietatamente onesta e provocatoria esplorava le miserie umane, la disillusione e la violenza della società, offrendo uno sguardo critico e spesso cinico sulla condizione umana.<br><br>
     Nel 1936, pubblicò <em>"La morte a credito"</em>, un altro romanzo innovativo che continuò a esplorare tematiche oscure e a sfidare le convenzioni letterarie.<br>
-    Questi romanzi sono considerati pietre miliari della letteratura moderna.<br>
+    Questi romanzi sono considerati pietre miliari della letteratura moderna.<br><br>
     </p>
 
     <h3> Le difficoltà </h3> 
@@ -55,6 +55,7 @@
 
   <div class="mini_bio_img">
     <img src="https://i.pinimg.com/736x/d2/eb/72/d2eb7215e659c235ecd9f5ef67b3b74f--ferdinand-celine.jpg">
+    <figcaption> Céline nel 1930 </figcaption>
   </div>
 
 </section>

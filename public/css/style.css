@@ -289,7 +289,6 @@ ul {
 body {
   background: rgb(251, 251, 251);
   background: radial-gradient(circle, rgb(68, 7, 7) 50%, rgb(49, 5, 5) 75%, rgb(24, 2, 2) 99%, rgb(0, 0, 0) 100%);
-  font-family: Montserrat, sans-serif;
 }
 body .my_container {
   height: 100%;
@@ -392,16 +391,22 @@ body main .mini_bio .mini_bio_text h3 {
 }
 body main .mini_bio .mini_bio_text p {
   font-size: 1rem !important;
-  font-family: Montserrat, sans-serif;
 }
 body main .mini_bio .mini_bio_img {
   grid-area: celineimg;
+  display: flex;
+  flex-direction: column;
 }
 body main .mini_bio .mini_bio_img img {
   height: auto;
   width: 100%;
   min-width: 180px;
   max-width: 480px;
+}
+body main .mini_bio .mini_bio_img figcaption {
+  align-self: center;
+  padding-top: 10px;
+  font-family: Dancing Script, cursive;
 }
 body footer {
   grid-area: footer;
@@ -415,5 +420,8 @@ body footer p {
 }
 body footer p small {
   font-size: 1rem;
-  font-family: "Caveat", "cursive";
+  font-family: Caveat, cursive;
+}
+body footer p a {
+  color: rgb(255, 250, 240) !important;
 }

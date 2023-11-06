@@ -170,12 +170,20 @@ body {
             // Immagine minibio
             .mini_bio_img {
                 grid-area: celineimg;
+                display: flex;
+                flex-direction: column;
 
                 img {
                     height: auto;
                     width: 100%;
                     min-width: 180px;
                     max-width: 480px;
+                }
+
+                figcaption {
+                    align-self: center;
+                    padding-top: 10px;
+                    font-family: map-get($font-family-map, em);
                 }
             }
         
@@ -186,19 +194,21 @@ body {
     footer {
         grid-area: footer;
         background-color: black;
-        
         height: 100px;
         
-        // Text
-        
+        // Text and link
         p {
             margin: 0;
             height: 100%;
-            color: map-get($color-map, links_color) !important;
+            color: map-get($color-map, links_color) !important; 
             
             small {
                 font-size: 1rem;
-                font-family: 'Caveat', 'cursive';
+                font-family: map-get($font-family-map, cit);
+            }
+            
+            a {
+                color: map-get($color-map, links_color) !important;                
             }
         }
          
