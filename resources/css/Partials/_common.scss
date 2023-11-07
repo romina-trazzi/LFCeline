@@ -24,6 +24,8 @@ $font-family-map: (
   "text": unquote('Montserrat, sans-serif')
 );
 
+
+// Font size map
 $font-size-map: (
 
   //Small values
@@ -43,14 +45,6 @@ $font-size-map: (
 );
 
 
-
-
-// Sezioni
-// @mixin sezioni {
-//     margin: 0;
-//     padding: 0 0 45px 0;
-// }
-
 // Bar
 @mixin bar {
   
@@ -63,6 +57,14 @@ $font-size-map: (
   }
 
 }
+
+
+// Sezioni
+// @mixin sezioni {
+//     margin: 0;
+//     padding: 0 0 45px 0;
+// }
+
 
 
 // Titoli principali

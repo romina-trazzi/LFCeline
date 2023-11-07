@@ -5,7 +5,7 @@
 
 @section('stylecss')
 
-<link rel="stylesheet" href="{{asset('css/contacts.css')}}" type="text/css">
+<link rel="stylesheet" href="{{asset('css/who.css')}}" type="text/css">
 
 @endsection
 
@@ -13,9 +13,11 @@
 
 @section('mediquerycss')
 
-<link rel="stylesheet" href="{{asset('css/mqContacts.css')}}" type="text/css">
+<link rel="stylesheet" href="{{asset('css/mqWho.css')}}" type="text/css">
 
 @endsection
+
+
 
 <!-- si mette al posto dello yield del file app della cartella layout -->
 @section('content')

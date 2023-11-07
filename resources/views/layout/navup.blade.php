@@ -15,7 +15,7 @@
                 <li> <a href="/home.php"> HOME </a></li> 
                 <li> <a href="/bookstore.php"> LE OPERE </a></li>
                 <li> <a href="/gallery.php"> GALLERY </a></li>
-                <li> <a href="#"> BLOG </a></li>
+                <li> <a href="/who.php"> CHI SONO </a></li>
                 <li> <a href="/contacts.php"> CONTATTI </a></li>
 
             </div> 

@@ -1,5 +1,10 @@
 {
     "/js/main_vue.js": "/js/main_vue.js",
+    "/css/contacts.css": "/css/contacts.css",
+    "/css/gallery.css": "/css/gallery.css",
+    "/css/home.css": "/css/home.css",
     "/css/style.css": "/css/style.css",
-    "/css/mediaquery.css": "/css/mediaquery.css"
+    "/css/bookstore.css": "/css/bookstore.css",
+    "/css/who.css": "/css/who.css",
+    "/css/mq Home.css": "/css/mq Home.css"
 }

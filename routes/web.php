@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('pages.welcome');
+    return view('pages.home');
 });
 
 Route::get('home.php', function () {
@@ -27,6 +27,10 @@ Route::get('bookstore.php', function () {
 
 Route::get('gallery.php', function () {
     return view('pages.gallery');
+});
+
+Route::get('who.php', function () {
+    return view('pages.who');
 });
 
 Route::get('contacts.php', function () {

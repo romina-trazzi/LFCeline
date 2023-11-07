@@ -21923,10 +21923,75 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/css/mediaquery.scss":
+/***/ "./resources/css/Media Query Pages/mq Home.scss":
+/*!******************************************************!*\
+  !*** ./resources/css/Media Query Pages/mq Home.scss ***!
+  \******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./resources/css/Pages/home.scss":
 /*!***************************************!*\
-  !*** ./resources/css/mediaquery.scss ***!
+  !*** ./resources/css/Pages/home.scss ***!
   \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./resources/css/Pages/gallery.scss":
+/*!******************************************!*\
+  !*** ./resources/css/Pages/gallery.scss ***!
+  \******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./resources/css/Pages/who.scss":
+/*!**************************************!*\
+  !*** ./resources/css/Pages/who.scss ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./resources/css/Pages/bookstore.scss":
+/*!********************************************!*\
+  !*** ./resources/css/Pages/bookstore.scss ***!
+  \********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./resources/css/Pages/contacts.scss":
+/*!*******************************************!*\
+  !*** ./resources/css/Pages/contacts.scss ***!
+  \*******************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -22265,8 +22330,13 @@ process.umask = function() { return 0; };
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
 /******/ 			"/js/main_vue": 0,
+/******/ 			"css/contacts": 0,
+/******/ 			"css/gallery": 0,
+/******/ 			"css/home": 0,
 /******/ 			"css/style": 0,
-/******/ 			"css/mediaquery": 0
+/******/ 			"css/bookstore": 0,
+/******/ 			"css/who": 0,
+/******/ 			"css/mq Home": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -22316,9 +22386,14 @@ process.umask = function() { return 0; };
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["css/style","css/mediaquery"], () => (__webpack_require__("./resources/js/main_vue.js")))
-/******/ 	__webpack_require__.O(undefined, ["css/style","css/mediaquery"], () => (__webpack_require__("./resources/css/style.scss")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/style","css/mediaquery"], () => (__webpack_require__("./resources/css/mediaquery.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/contacts","css/gallery","css/home","css/style","css/bookstore","css/who","css/mq Home"], () => (__webpack_require__("./resources/js/main_vue.js")))
+/******/ 	__webpack_require__.O(undefined, ["css/contacts","css/gallery","css/home","css/style","css/bookstore","css/who","css/mq Home"], () => (__webpack_require__("./resources/css/Pages/home.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/contacts","css/gallery","css/home","css/style","css/bookstore","css/who","css/mq Home"], () => (__webpack_require__("./resources/css/Pages/gallery.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/contacts","css/gallery","css/home","css/style","css/bookstore","css/who","css/mq Home"], () => (__webpack_require__("./resources/css/Pages/who.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/contacts","css/gallery","css/home","css/style","css/bookstore","css/who","css/mq Home"], () => (__webpack_require__("./resources/css/Pages/bookstore.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/contacts","css/gallery","css/home","css/style","css/bookstore","css/who","css/mq Home"], () => (__webpack_require__("./resources/css/Pages/contacts.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/contacts","css/gallery","css/home","css/style","css/bookstore","css/who","css/mq Home"], () => (__webpack_require__("./resources/css/style.scss")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/contacts","css/gallery","css/home","css/style","css/bookstore","css/who","css/mq Home"], () => (__webpack_require__("./resources/css/Media Query Pages/mq Home.scss")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

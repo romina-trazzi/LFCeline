@@ -36,7 +36,10 @@
 
         <!-- Css stylesheets -->
         <link rel="stylesheet" href="{{asset('css/style.css')}}" type="text/css">
-        <link rel="stylesheet" href="{{asset('css/mediaquery.css')}}" type="text/css">
+        @yield('stylecss')
+        @yield('mediaquerycss')
+        
+        {{-- <link rel="stylesheet" href="{{asset('css/mediaquery.css')}}" type="text/css"> --}}
 
        
     </head>

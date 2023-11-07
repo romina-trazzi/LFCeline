@@ -2,6 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 @import url(https://fonts.googleapis.com/css?family=Caveat);
 /* Codice CSS Louis Ferdinand Celine */
+/* Codice CSS Louis Ferdinand Celine */
 /* CLASSI UTILITY */
 .d_flex {
   display: flex;
@@ -355,4 +356,80 @@ body footer p small {
 }
 body footer p a {
   color: rgb(255, 250, 240) !important;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body main {
+  grid-area: main;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body main .ink_bar {
+  width: 70%;
+  text-align: "center";
+  margin: 50px auto 10px auto;
+  border: 2px solid black;
+  border-radius: 3px;
+}
+body main hr.ink_bar:nth-child(3), body main hr.ink_bar:nth-child(5) {
+  margin: 30px auto 50px auto;
+}
+body main .quotation {
+  flex-direction: column;
+  align-items: center;
+}
+body main .quotation blockquote, body main .quotation figcaption {
+  font-family: "Caveat", sans-serif;
+  width: 85%;
+  color: rgb(68, 7, 7);
+}
+body main .quotation figcaption {
+  text-align: center;
+}
+body main .mini_bio {
+  display: grid;
+  grid-template-columns: 20px auto 20px auto 20px;
+  grid-template-rows: auto auto;
+  grid-template-areas: ". celinetext . celineimg . ";
+}
+body main .mini_bio .mini_bio_text {
+  grid-area: celinetext;
+  width: 100%;
+  max-height: 668px;
+  scrollbar-color: grey rgb(141, 139, 139) !important;
+  overflow-y: auto;
+  box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.5);
+}
+body main .mini_bio .mini_bio_text p, body main .mini_bio .mini_bio_text h3 {
+  padding: 15px;
+  margin: 0;
+}
+body main .mini_bio .mini_bio_text h3 {
+  font-size: 1.5rem !important;
+  font-family: Dancing Script, cursive;
+  color: rgb(18, 18, 18);
+}
+body main .mini_bio .mini_bio_text p {
+  font-size: 1rem !important;
+}
+body main .mini_bio .mini_bio_img {
+  grid-area: celineimg;
+  display: flex;
+  flex-direction: column;
+}
+body main .mini_bio .mini_bio_img img {
+  height: auto;
+  width: 100%;
+  min-width: 180px;
+  max-width: 480px;
+}
+body main .mini_bio .mini_bio_img figcaption {
+  align-self: center;
+  padding-top: 10px;
+  font-family: Dancing Script, cursive;
 }
