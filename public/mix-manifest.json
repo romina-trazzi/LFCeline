@@ -6,5 +6,6 @@
     "/css/gallery.css": "/css/gallery.css",
     "/css/home.css": "/css/home.css",
     "/css/mq Home.css": "/css/mq Home.css",
-    "/css/style.css": "/css/style.css"
+    "/css/style.css": "/css/style.css",
+    "/css/mediaquery.css": "/css/mediaquery.css"
 }

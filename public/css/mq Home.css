@@ -359,179 +359,38 @@ body footer p a {
   color: rgb(255, 250, 240) !important;
 }
 
-/* MediaQuery CSS Louis Ferdinand Celine */
-/*=============================================
-=            HEADER MEDIAQUERY          =
-=============================================*/
-@media (max-width: 1599px) {
-  .my_container {
-    width: 80% !important;
-  }
-}
-@media (max-width: 599px) {
-  .jumbo_box {
-    grid-template-columns: 100% !important;
-    grid-template-rows: auto !important;
-    grid-template-areas: "celineimg" !important;
-  }
-}
-@media (min-width: 600px) and (max-width: 1599px) {
-  .my_jumbotron .jumbo_box {
-    grid-template-columns: 100% !important;
-    grid-template-rows: auto auto !important;
-    grid-template-areas: "celineimg" "celinemaintext" !important;
-  }
-}
-@media (max-width: 699px) {
-  li::before {
-    content: "";
-    display: none !important;
-  }
-}
-@media (max-width: 999px) {
-  nav li > a {
-    font-size: 1em !important;
-  }
-}
-@media (max-width: 1599px) {
-  nav {
-    margin: auto;
-    display: grid;
-    grid-template-columns: 100% !important;
-    grid-template-rows: 0% !important;
-    grid-template-areas: "navbar" !important;
-    align-items: center;
-  }
-}
-@media (max-width: 599px) {
-  .jumbo_text {
-    padding-top: 0px !important;
-  }
-  .jumbo_text h1 {
-    display: none !important;
-  }
-  .jumbo_text h3 {
-    display: none !important;
-  }
-}
-@media (min-width: 600px) and (max-width: 799px) {
-  .jumbo_text h1 {
-    font-size: 5vw !important;
-    text-align: center !important;
-  }
-  .jumbo_text .jumbo_text {
-    padding-top: 10px !important;
-  }
-  .jumbo_text h3 {
-    font-size: 2.7vw !important;
-    text-align: center !important;
-  }
-}
-@media (min-width: 800px) and (max-width: 999px) {
-  .jumbo_text h1 {
-    font-size: 5vw !important;
-    text-align: center !important;
-  }
-  .jumbo_text .jumbo_text {
-    padding-top: 10px !important;
-  }
-  .jumbo_text h3 {
-    font-size: 2.5vw !important;
-    text-align: center;
-  }
-}
 @media (min-width: 1000px) and (max-width: 1199px) {
-  .jumbo_text h1 {
-    font-size: 6.5vw !important;
+  main .mini_bio .mini_bio_text {
+    max-height: 700px;
   }
-  .jumbo_text h3 {
-    font-size: 2.3vw !important;
+  main .mini_bio .mini_bio_text p {
+    font-size: 1.1rem !important;
   }
-}
-@media (min-width: 1200px) {
-  .jumbo_text {
-    grid-area: celinemaintext;
-    padding-top: 0px !important;
-    margin-left: 20px !important;
-  }
-  .jumbo_text h1 {
-    font-size: 5vw !important;
-  }
-  .jumbo_text h3 {
-    font-size: 2vw !important;
-    text-align: center;
-  }
-}
-@media (max-width: 699px) {
-  .my_jumbotron .jumbo_img img {
-    max-height: 300px;
-    max-width: 200px !important;
-    width: 90% !important;
+  main .mini_bio .mini_bio_img img {
+    width: 100% !important;
+    max-height: 700px;
+    flex-grow: 1;
   }
 }
 @media (min-width: 1200px) and (max-width: 1599px) {
-  .my_jumbotron .jumbo_img {
-    grid-area: celineimg;
-  }
-  .my_jumbotron .jumbo_img img {
-    width: 80% !important;
-    max-height: 300px;
-  }
-}
-@media (min-width: 1600px) {
-  .my_jumbotron .jumbo_box {
-    grid-template-columns: 25% auto !important;
-  }
-  .my_jumbotron .jumbo_img {
-    grid-area: celineimg;
-  }
-  .my_jumbotron .jumbo_img img {
-    width: 80% !important;
-    max-height: 300px;
-  }
-}
-@media (min-width: 2750px) {
-  .my_jumbotron .jumbo_img img {
-    max-height: 350px !important;
-    width: 100% !important;
-  }
-}
-@media (min-width: 4096px) {
-  .my_jumbotron .jumbo_img img {
-    max-height: 400px !important;
-    width: 100% !important;
-  }
-}
-@media (max-width: 1599px) {
-  .my_jumbotron .jumbo_img {
-    grid-area: celineimg !important;
-    display: flex;
-    justify-content: center;
-  }
-  .my_jumbotron .jumbo_img img {
-    max-height: 300px;
-    max-width: 255px;
-    width: 90% !important;
-  }
-  .my_jumbotron .jumbo_text {
-    grid-area: celinemaintext !important;
-    display: flex !important;
-    flex-direction: column;
-    justify-content: center !important;
-    align-items: center !important;
-  }
-}
-/*=====  End of Section comment block  ======*/
-@media (min-width: 1680px) and (max-width: 1919px) {
-  main .mini_bio {
-    display: grid;
-    grid-template-columns: 20px auto 20px auto 20px !important;
-    grid-template-rows: auto auto;
-    grid-template-areas: ". celinetext . celineimg . ";
-  }
   main .mini_bio .mini_bio_text {
     grid-area: celinetext;
-    max-height: 1000px !important;
+    max-height: 800px !important;
+    width: 100%;
+  }
+  main .mini_bio .mini_bio_text p {
+    font-size: 1.2rem !important;
+  }
+  main .mini_bio .mini_bio_img img {
+    width: 100% !important;
+    max-height: 800px;
+    flex-grow: 1;
+  }
+}
+@media (min-width: 1600px) and (max-width: 1919px) {
+  main .mini_bio .mini_bio_text {
+    grid-area: celinetext;
+    max-height: 700px !important;
     width: 100%;
     scrollbar-color: grey rgb(141, 139, 139) !important;
     overflow-y: auto;
@@ -556,7 +415,7 @@ body footer p a {
   }
   main .mini_bio .mini_bio_img img {
     width: 100% !important;
-    flex-grow: 1;
+    height: 700px;
   }
   main .mini_bio .mini_bio_img figcaption {
     align-self: center;
@@ -565,17 +424,13 @@ body footer p a {
   }
 }
 @media (min-width: 1920px) {
-  main .mini_bio {
-    grid-template-columns: 20px 50% 20px auto 20px !important;
-  }
-  main .mini_bio .mini_bio_img img {
-    width: 100% !important;
-    flex-grow: 1;
-  }
-}
-@media (min-width: 1920px) {
-  main .mini_bio {
-    grid-template-columns: 20px 50% 20px auto 20px !important;
+  main .mini_bio .mini_bio_text {
+    grid-area: celinetext;
+    max-height: 1000px !important;
+    width: 100%;
+    scrollbar-color: grey rgb(141, 139, 139) !important;
+    overflow-y: auto;
+    box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.5);
   }
   main .mini_bio .mini_bio_img img {
     width: 100% !important;
