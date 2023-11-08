@@ -317,11 +317,13 @@ body header .my_jumbotron .jumbo_box {
 }
 body header .my_jumbotron .jumbo_box .jumbo_img {
   grid-area: celineimg;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 body header .my_jumbotron .jumbo_box .jumbo_img img {
   width: auto;
   max-height: 300px;
-  max-width: 200px;
 }
 body header .my_jumbotron .jumbo_box .jumbo_text {
   grid-area: celinemaintext;
@@ -359,9 +361,9 @@ body footer p a {
 
 /* MediaQuery CSS Louis Ferdinand Celine */
 /*=============================================
-=            Section comment block            =
+=            HEADER MEDIAQUERY          =
 =============================================*/
-@media (max-width: 1199px) {
+@media (max-width: 1599px) {
   .my_container {
     width: 80% !important;
   }
@@ -373,7 +375,7 @@ body footer p a {
     grid-template-areas: "celineimg" !important;
   }
 }
-@media (min-width: 600px) and (max-width: 1199px) {
+@media (min-width: 600px) and (max-width: 1599px) {
   .my_jumbotron .jumbo_box {
     grid-template-columns: 100% !important;
     grid-template-rows: auto auto !important;
@@ -391,7 +393,7 @@ body footer p a {
     font-size: 1em !important;
   }
 }
-@media (max-width: 1199px) {
+@media (max-width: 1599px) {
   nav {
     margin: auto;
     display: grid;
@@ -467,7 +469,40 @@ body footer p a {
     width: 90% !important;
   }
 }
-@media (max-width: 1199px) {
+@media (min-width: 1200px) and (max-width: 1599px) {
+  .my_jumbotron .jumbo_img {
+    grid-area: celineimg;
+  }
+  .my_jumbotron .jumbo_img img {
+    width: 80% !important;
+    max-height: 300px;
+  }
+}
+@media (min-width: 1600px) {
+  .my_jumbotron .jumbo_box {
+    grid-template-columns: 25% auto !important;
+  }
+  .my_jumbotron .jumbo_img {
+    grid-area: celineimg;
+  }
+  .my_jumbotron .jumbo_img img {
+    width: 80% !important;
+    max-height: 300px;
+  }
+}
+@media (min-width: 2750px) {
+  .my_jumbotron .jumbo_img img {
+    max-height: 350px !important;
+    width: 100% !important;
+  }
+}
+@media (min-width: 4096px) {
+  .my_jumbotron .jumbo_img img {
+    max-height: 400px !important;
+    width: 100% !important;
+  }
+}
+@media (max-width: 1599px) {
   .my_jumbotron .jumbo_img {
     grid-area: celineimg !important;
     display: flex;
@@ -484,14 +519,6 @@ body footer p a {
     flex-direction: column;
     justify-content: center !important;
     align-items: center !important;
-  }
-}
-@media (min-width: 1200px) and (max-width: 1660px) {
-  .my_jumbotron .jumbo_img {
-    grid-area: celineimg;
-  }
-  .my_jumbotron .jumbo_img img {
-    width: 100% !important;
   }
 }
 /*=====  End of Section comment block  ======*/
@@ -535,6 +562,15 @@ body footer p a {
     align-self: center;
     padding-top: 10px;
     font-family: Dancing Script, cursive;
+  }
+}
+@media (min-width: 1920px) {
+  main .mini_bio {
+    grid-template-columns: 20px 50% 20px auto 20px !important;
+  }
+  main .mini_bio .mini_bio_img img {
+    width: 100% !important;
+    flex-grow: 1;
   }
 }
 @media (min-width: 1920px) {

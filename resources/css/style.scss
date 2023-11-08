@@ -68,12 +68,14 @@ body {
 
                 .jumbo_img {
                     grid-area: celineimg;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
 
                     img {
                         width: auto;
                         max-height: 300px;
-                        max-width: 200px;
-            
+
                     }
                 }
 

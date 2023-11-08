@@ -248,7 +248,7 @@
 
 
 
-// Schermi grandi xxl
+// Schermi Full HD
 @media (min-width: 1920px) {
    
     main {
@@ -270,6 +270,28 @@
         }
     }
     
-    
+}
 
+// Schermi 2K
+@media (min-width: 1920px) {
+   
+    main {
+
+        .mini_bio {
+
+        // Minibio - Layout interno
+        grid-template-columns: 20px 50% 20px auto 20px !important;
+      
+            // Immagine minibio
+            .mini_bio_img {
+                img {
+                    width: 100% !important;
+                    flex-grow: 1;
+                }
+
+            }
+        
+        }
+    }
+    
 }

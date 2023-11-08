@@ -1,10 +1,10 @@
 
 /*=============================================
-=            Section comment block            =
+=            HEADER MEDIAQUERY          =
 =============================================*/
 
 // CONTAINER 
-@media (max-width: 1199px) {
+@media (max-width: 1599px) {
     .my_container {
         width: 80% !important;
     }
@@ -21,7 +21,7 @@
     }
 }
 
-@media (min-width: 600px) and (max-width: 1199px) {
+@media (min-width: 600px) and (max-width: 1599px) {
     .my_jumbotron {
 
         // Layout interno
@@ -52,7 +52,7 @@
 
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1599px) {
     nav {
         margin: auto;
         display: grid;
@@ -180,8 +180,83 @@
 
 }
 
+@media(min-width: 1200px) and (max-width: 1599px){
+    .my_jumbotron {
+
+        .jumbo_img {
+            
+            grid-area: celineimg;
+            
+            img {
+                width: 80% !important;
+                max-height: 300px;
+            }
+        }
+
+    }
+
+}
+
+@media(min-width: 1600px) {
+    .my_jumbotron {
+
+        // Jumbotron - layout interno
+        .jumbo_box {
+            grid-template-columns: 25% auto !important;
+        }
+
+        .jumbo_img {
+            
+            grid-area: celineimg;
+            
+            img {
+                width: 80% !important;
+                max-height: 300px;
+            }
+
+        }
+
+    }
+
+}
+
+@media (min-width: 2750px) {
+    .my_jumbotron {
+
+        .jumbo_img {
+        
+            img {
+                max-height: 350px !important;
+                width: 100% !important;
+            }
+        }
+    
+       
+        
+    }
+
+}
+
+@media (min-width: 4096px ) {
+    .my_jumbotron {
+
+        .jumbo_img {
+        
+            img {
+                max-height: 400px !important;
+                width: 100% !important;
+            }
+        }
+    
+       
+        
+    }
+}
+
+
+
 // IMMAGINE + TESTO JUMBOTRON
-@media (max-width: 1199px) {
+@media (max-width: 1599px) {
     .my_jumbotron {
 
         .jumbo_img {
@@ -209,22 +284,7 @@
 
 }
 
-@media(min-width: 1200px) and (max-width: 1660px){
-    .my_jumbotron {
-        
-        .jumbo_img {
-            
-            grid-area: celineimg;
-            
-            img {
-                width: 100% !important;
-            }
 
-        }
-
-    }
-
-}
 
 
 

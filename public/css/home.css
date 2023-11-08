@@ -318,11 +318,13 @@ body header .my_jumbotron .jumbo_box {
 }
 body header .my_jumbotron .jumbo_box .jumbo_img {
   grid-area: celineimg;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 body header .my_jumbotron .jumbo_box .jumbo_img img {
   width: auto;
   max-height: 300px;
-  max-width: 200px;
 }
 body header .my_jumbotron .jumbo_box .jumbo_text {
   grid-area: celinemaintext;
