@@ -359,6 +359,49 @@ body footer p a {
   color: rgb(255, 250, 240) !important;
 }
 
+@media (max-width: 799px) {
+  main .mini_bio .mini_bio_text {
+    max-height: 700px;
+  }
+  main .mini_bio .mini_bio_text p {
+    font-size: 1.1rem !important;
+  }
+  main .mini_bio .mini_bio_img img {
+    width: 100% !important;
+    max-height: 700px;
+    flex-grow: 1;
+  }
+}
+@media (min-width: 800px) and (max-width: 999px) {
+  main .mini_bio {
+    display: grid;
+    grid-template-columns: 20px auto 20px auto 20px;
+    grid-template-rows: auto auto !important;
+    grid-template-areas: ". celineminibiotext . celineminibioimg ." ". celineminibiotextlong celineminibiotextlong celinebiotextlong ." !important;
+  }
+  main .mini_bio p {
+    font-size: 0.85rem !important;
+    margin-bottom: 0;
+  }
+  main .mini_bio .mini_bio_text {
+    grid-area: celineminibiotext;
+    grid-column: 2/3;
+    width: 100%;
+  }
+  main .mini_bio .mini_bio_text_long {
+    grid-area: celineminibiotextlong;
+    grid-column: 2/5 !important;
+  }
+  main .mini_bio .mini_bio_text_long p {
+    margin-top: 20px !important;
+  }
+  main .mini_bio .mini_bio_img img {
+    width: 100% !important;
+    max-width: 250px !important;
+    min-width: 180px;
+    height: auto;
+  }
+}
 @media (min-width: 1000px) and (max-width: 1199px) {
   main .mini_bio .mini_bio_text {
     max-height: 700px;
