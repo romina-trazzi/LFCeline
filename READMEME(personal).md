@@ -5,7 +5,7 @@ Data fine progetto:
 Questo sito, il primo in Italia, è di proprietà dell'Associazione culturale "ItaliaStorica": intende far 
 conoscere la figura del filosofo francese Louis-Ferdinand Céline e diffondere la sua opera. 
 
-Richiesta: pagina singola di contatto full-responsive e cross-browser.
+Richiesta: sito web di contatto full-responsive e cross-browser.
 
 Tecnologie utilizzate:
 - HTML 5 

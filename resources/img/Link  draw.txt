@@ -13,3 +13,7 @@
 
 
 <a href=&quot;//commons.wikimedia.org/wiki/User:Giobd&quot; title=&quot;User:Giobd&quot;&gt;Gio&lt;/a&gt; - &lt;span class=&quot;int-own-work&quot; lang=&quot;sc&quot;&gt;Traballu pròpriu&lt;/span&gt;, <a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en" title="Creative Commons Zero, Public Domain Dedication">CC0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=15439866">Link</a>
+
+
+background-image: url("https://iili.io/Hlz2ZIR.md.png");
+background-image: url("https://iili.io/HlIZMhX.md.png");

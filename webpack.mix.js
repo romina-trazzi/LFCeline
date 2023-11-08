@@ -13,6 +13,8 @@ mix
 .sass('resources/css/Pages/bookstore.scss', 'css')
 .sass('resources/css/Pages/contacts.scss', 'css')
 .sass ('resources/css/style.scss', 'css')
+
+.sass('resources/css/mediaquery.scss', 'css')
 .sass('resources/css/Media Query Pages/mq Home.scss', 'css')
 .setPublicPath('public')
 

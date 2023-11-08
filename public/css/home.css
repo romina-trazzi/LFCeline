@@ -292,7 +292,7 @@ body {
   background: radial-gradient(circle, rgb(68, 7, 7) 50%, rgb(49, 5, 5) 75%, rgb(24, 2, 2) 99%, rgb(0, 0, 0) 100%);
 }
 body .my_container {
-  height: 100%;
+  min-height: 100vh;
   width: 60%;
   padding: 0;
   margin: 0 auto;
@@ -301,7 +301,7 @@ body .my_container {
   border-right: 1px solid black;
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: max-content auto 5%;
+  grid-template-rows: max-content max-content auto;
   grid-template-areas: "header" "main" "footer";
   overflow: hidden;
 }
@@ -343,7 +343,7 @@ body header .my_jumbotron .jumbo_box .jumbo_text h3 {
 body footer {
   grid-area: footer;
   background-color: black;
-  height: 100px;
+  min-height: 100px;
 }
 body footer p {
   margin: 0;
@@ -400,7 +400,6 @@ body main .mini_bio {
 body main .mini_bio .mini_bio_text {
   grid-area: celinetext;
   width: 100%;
-  max-height: 668px;
   scrollbar-color: grey rgb(141, 139, 139) !important;
   overflow-y: auto;
   box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.5);
@@ -415,18 +414,12 @@ body main .mini_bio .mini_bio_text h3 {
   color: rgb(18, 18, 18);
 }
 body main .mini_bio .mini_bio_text p {
-  font-size: 1rem !important;
+  font-size: 1.1rem;
 }
 body main .mini_bio .mini_bio_img {
   grid-area: celineimg;
   display: flex;
   flex-direction: column;
-}
-body main .mini_bio .mini_bio_img img {
-  height: auto;
-  width: 100%;
-  min-width: 180px;
-  max-width: 480px;
 }
 body main .mini_bio .mini_bio_img figcaption {
   align-self: center;

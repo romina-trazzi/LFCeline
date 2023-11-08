@@ -12,9 +12,9 @@
 
 <!-- si mette al posto dello yield "mediquerycss" del file app della cartella layout -->
 
-@section('mediquerycss')
+@section('mediaquerycss')
 
-<link rel="stylesheet" href="{{asset('css/mqHome.css')}}" type="text/css">
+<link rel="stylesheet" href="{{asset('css/mq Home.css')}}" type="text/css">
 
 @endsection
 

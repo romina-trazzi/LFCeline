@@ -37,9 +37,9 @@
         <!-- Css stylesheets -->
         <link rel="stylesheet" href="{{asset('css/style.css')}}" type="text/css">
         @yield('stylecss')
+        <link rel="stylesheet" href="{{asset('css/mediaquery.css')}}" type="text/css"> 
         @yield('mediaquerycss')
         
-        {{-- <link rel="stylesheet" href="{{asset('css/mediaquery.css')}}" type="text/css"> --}}
 
        
     </head>

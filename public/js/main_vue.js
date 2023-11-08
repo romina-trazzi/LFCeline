@@ -22331,12 +22331,12 @@ process.umask = function() { return 0; };
 /******/ 		var installedChunks = {
 /******/ 			"/js/main_vue": 0,
 /******/ 			"css/contacts": 0,
-/******/ 			"css/gallery": 0,
-/******/ 			"css/home": 0,
-/******/ 			"css/style": 0,
 /******/ 			"css/bookstore": 0,
 /******/ 			"css/who": 0,
-/******/ 			"css/mq Home": 0
+/******/ 			"css/gallery": 0,
+/******/ 			"css/home": 0,
+/******/ 			"css/mq Home": 0,
+/******/ 			"css/style": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -22386,14 +22386,14 @@ process.umask = function() { return 0; };
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["css/contacts","css/gallery","css/home","css/style","css/bookstore","css/who","css/mq Home"], () => (__webpack_require__("./resources/js/main_vue.js")))
-/******/ 	__webpack_require__.O(undefined, ["css/contacts","css/gallery","css/home","css/style","css/bookstore","css/who","css/mq Home"], () => (__webpack_require__("./resources/css/Pages/home.scss")))
-/******/ 	__webpack_require__.O(undefined, ["css/contacts","css/gallery","css/home","css/style","css/bookstore","css/who","css/mq Home"], () => (__webpack_require__("./resources/css/Pages/gallery.scss")))
-/******/ 	__webpack_require__.O(undefined, ["css/contacts","css/gallery","css/home","css/style","css/bookstore","css/who","css/mq Home"], () => (__webpack_require__("./resources/css/Pages/who.scss")))
-/******/ 	__webpack_require__.O(undefined, ["css/contacts","css/gallery","css/home","css/style","css/bookstore","css/who","css/mq Home"], () => (__webpack_require__("./resources/css/Pages/bookstore.scss")))
-/******/ 	__webpack_require__.O(undefined, ["css/contacts","css/gallery","css/home","css/style","css/bookstore","css/who","css/mq Home"], () => (__webpack_require__("./resources/css/Pages/contacts.scss")))
-/******/ 	__webpack_require__.O(undefined, ["css/contacts","css/gallery","css/home","css/style","css/bookstore","css/who","css/mq Home"], () => (__webpack_require__("./resources/css/style.scss")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/contacts","css/gallery","css/home","css/style","css/bookstore","css/who","css/mq Home"], () => (__webpack_require__("./resources/css/Media Query Pages/mq Home.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/contacts","css/bookstore","css/who","css/gallery","css/home","css/mq Home","css/style"], () => (__webpack_require__("./resources/js/main_vue.js")))
+/******/ 	__webpack_require__.O(undefined, ["css/contacts","css/bookstore","css/who","css/gallery","css/home","css/mq Home","css/style"], () => (__webpack_require__("./resources/css/Pages/home.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/contacts","css/bookstore","css/who","css/gallery","css/home","css/mq Home","css/style"], () => (__webpack_require__("./resources/css/Pages/gallery.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/contacts","css/bookstore","css/who","css/gallery","css/home","css/mq Home","css/style"], () => (__webpack_require__("./resources/css/Pages/who.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/contacts","css/bookstore","css/who","css/gallery","css/home","css/mq Home","css/style"], () => (__webpack_require__("./resources/css/Pages/bookstore.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/contacts","css/bookstore","css/who","css/gallery","css/home","css/mq Home","css/style"], () => (__webpack_require__("./resources/css/Pages/contacts.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/contacts","css/bookstore","css/who","css/gallery","css/home","css/mq Home","css/style"], () => (__webpack_require__("./resources/css/style.scss")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/contacts","css/bookstore","css/who","css/gallery","css/home","css/mq Home","css/style"], () => (__webpack_require__("./resources/css/Media Query Pages/mq Home.scss")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()
