@@ -1,4 +1,3 @@
-/* MediaQuery CSS Louis Ferdinand Celine */
 /*=============================================
 =            HEADER MEDIAQUERY          =
 =============================================*/
@@ -53,59 +52,23 @@
     display: none !important;
   }
 }
-@media (min-width: 600px) {
-  .jumbo_text h1 {
-    font-size: 6vw !important;
-    text-align: center !important;
-  }
-  .jumbo_text .jumbo_text {
-    padding-top: 10px !important;
-  }
-  .jumbo_text h3 {
-    font-size: 3.6vw !important;
-    text-align: center !important;
-  }
-}
-@media (min-width: 800px) {
-  .jumbo_text h1 {
-    font-size: 5vw !important;
-    text-align: center !important;
-  }
-  .jumbo_text .jumbo_text {
-    padding-top: 10px !important;
-  }
-  .jumbo_text h3 {
-    font-size: 2.5vw !important;
-    text-align: center;
+@media (min-width: 1000px) and (max-width: 1599px) {
+  .jumbo_text {
+    padding: 30px;
   }
 }
 @media (min-width: 1000px) {
-  .jumbo_text h1 {
-    font-size: 6.5vw !important;
-  }
-  .jumbo_text h3 {
-    font-size: 2.3vw !important;
-  }
-}
-@media (min-width: 1200px) {
-  .jumbo_text {
-    grid-area: celinemaintext;
-  }
-  .jumbo_text h1 {
-    font-size: 5vw !important;
-  }
-  .jumbo_text h3 {
-    font-size: 2vw !important;
-    text-align: center;
-  }
-}
-@media (max-width: 1599px) {
   .my_jumbotron .jumbo_text {
-    grid-area: celinemaintext !important;
     display: flex !important;
     flex-direction: column;
     align-items: center !important;
-    padding-top: 30px;
+  }
+  .my_jumbotron .jumbo_text h1 {
+    font-size: 5vw !important;
+  }
+  .my_jumbotron .jumbo_text h3 {
+    font-size: 2vw !important;
+    text-align: center;
   }
 }
 @media (max-width: 600px) {

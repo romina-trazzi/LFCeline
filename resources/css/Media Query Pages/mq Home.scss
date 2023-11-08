@@ -1,30 +1,45 @@
 @import "../style.scss";
 
-@media (max-width: 799px) {
+
+// Monocolonna
+@media (max-width: 599px) {
 
     main {
-
         .mini_bio {
 
-            // Testo minibio
-            .mini_bio_text {
-                max-height: 700px;
+           // Minibio - Layout interno monocolonna
+           grid-template-columns: 20px auto 20px !important;
+           grid-template-rows: auto !important;
+           grid-template-areas:
+           ". celineimg  ." 
+           ". celinetext ." !important;
 
-                p {
-                    font-size: 1.1rem !important;
-                }
-            }
+           // Testo minibio
+           .mini_bio_text {
+               max-height: 600px;
 
-            // Immagine minibio
-            .mini_bio_img {
+               p {
+                   font-size: 1rem !important;
+               }
+           }
 
-                img {
-                    width: 100% !important;
-                    max-height: 700px;
-                    flex-grow: 1;
-                      
-                }
-            }
+           // Immagine minibio
+           .mini_bio_img {
+               display: flex;
+               justify-content: center;
+               align-items: center;
+
+               img {
+                   width: 80% !important;
+                   max-height: 500px;
+                   flex-grow: 1;
+                     
+               }
+
+               figcaption {
+                   padding-bottom: 40px;
+               }
+           }
         }
             
            
@@ -32,19 +47,77 @@
 
 }
 
-@media (min-width: 800px) and (max-width: 999px) {
+// Monocolonna
+@media (min-width: 600px) and (max-width: 799px) {
+    main {
+        .mini_bio {
+
+            // Minibio - Layout interno monocolonna
+            grid-template-columns: 20px auto 20px !important;
+            grid-template-rows: auto !important;
+            grid-template-areas:
+            ". celineimg  ." 
+            ". celinetext ." !important;
+
+            // Testo minibio
+            .mini_bio_text {
+                max-height: 600px;
+
+                p {
+                    font-size: 1rem !important;
+                }
+            }
+
+            // Immagine minibio
+            .mini_bio_img {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    width: 70% !important;
+                    max-height: 500px;
+                    flex-grow: 1;
+                      
+                }
+
+                figcaption {
+                    padding-bottom: 40px;
+                }
+            }
+        }
+            
+           
+    }
+}
+
+@media (min-width: 700px) and (max-width: 799px) {
+    
+    main {
+        .mini_bio {
+
+            // Testo minibio
+            .mini_bio_text {
+                max-height: 600px;
+
+                p {
+                    font-size: 1.1rem !important;
+                }
+           }   
+    }   }
+
+}
+
+@media (min-width: 800px) and (max-width: 1199px) {
 
     main {
 
         .mini_bio {
 
-            // Minibio - Layout interno
+            // Minibio - Layout interno doppia colonna
             display: grid;
-            grid-template-columns: 20px auto 20px auto 20px;
+            grid-template-columns: 20px 50% 20px auto 20px;
             grid-template-rows: auto auto !important;
-            grid-template-areas: 
-                ". celineminibiotext . celineminibioimg ."
-                ". celineminibiotextlong celineminibiotextlong celinebiotextlong ." !important;
             
             p {
                 font-size: 0.85rem !important;
@@ -57,16 +130,6 @@
                 width: 100%;
                 
             }
-
-            .mini_bio_text_long {
-                grid-area: celineminibiotextlong;
-                grid-column: 2 / 5 !important;
-
-                p {
-                    margin-top: 20px !important;
-                }
-            }
-
 
             // Immagine minibio
             .mini_bio_img {
@@ -115,7 +178,7 @@
     
 }
 
-@media (min-width: 1200px) and (max-width: 1599px) {
+@media (min-width: 1200px)  and (max-width: 1599px){
 
     main {
 

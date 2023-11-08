@@ -7,6 +7,7 @@ let mix = require('laravel-mix');
 mix
 
 .js('resources/js/main_vue.js', 'js')
+
 .sass('resources/css/Pages/home.scss', 'css')
 .sass('resources/css/Pages/gallery.scss', 'css')
 .sass('resources/css/Pages/who.scss', 'css')

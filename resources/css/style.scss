@@ -3,9 +3,9 @@
 // Questa pagina contiene lo stile di tutti gli elementi comuni al sito
 
 // Basic Stylesheet
-@import "./Partials/_common.scss";
-@import "./Partials/_elements.scss";
-@import "./Partials/_navbar.scss";
+@import "./Partials/CssComponents/_common.scss";
+@import "./Partials/CssComponents/_elements.scss";
+@import "./Partials/CssComponents/_navbar.scss";
 // @import "./Partials/Main Style/_carousel.scss";
 
 
@@ -81,7 +81,6 @@ body {
 
                 .jumbo_text {
                     grid-area: celinemaintext;
-                    padding-top: 30px;
                     
                     h1, h3 {                       
                         margin: 0;
@@ -89,12 +88,10 @@ body {
                     }
                     
                     h1 {
-                        font-size: 6rem;
                         font-family: 'Dancing Script', 'cursive';
                     }
                     
                     h3 {
-                        font-size: 2rem;
                         font-family: 'Caveat', 'cursive';
                     }
                 }
@@ -129,6 +126,5 @@ body {
         }
          
     }
-    
 
 }

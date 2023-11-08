@@ -82,98 +82,104 @@
     }
 }
 
-// Da qui compaiono titolo + sottotitolo || Kindle (600 x 800)
-@media (min-width: 600px) {
+// // Da qui compaiono titolo + sottotitolo || H1: 6vw | H3: 3.6vw
+// @media (min-width: 600px) {
     
-    .jumbo_text {
+//     .jumbo_text {
 
-        h1 {
-            font-size: 6vw !important;
-            text-align: center !important; 
-        }
+//         h1 {
+//             font-size: 6vw !important;
+//             text-align: center; 
+//         }
             
-        .jumbo_text {
-            padding-top: 10px !important;
-        }
+//         .jumbo_text {
+//             padding-top: 10px;
+//         }
 
-        h3 {
-            font-size: 3.6vw !important;
-            text-align: center !important;
-        }
+//         h3 {
+//             font-size: 3.6vw;
+//             text-align: center;
+//         }
         
        
-    } 
-}
+//     } 
+// }
 
-@media (min-width: 800px) {
+// @media (min-width: 800px) {
 
-    .jumbo_text {
+//     .jumbo_text {
 
-        h1 {
-            font-size: 5vw !important;
-            text-align: center !important; 
-        }
+//         h1 {
+//             font-size: 5vw !important;
+//             text-align: center !important; 
+//         }
             
-        .jumbo_text {
-            padding-top: 10px !important;
-        }
+//         .jumbo_text {
+//             padding-top: 10px !important;
+//         }
         
-        h3 {
-            font-size: 2.5vw !important;
-            text-align: center;
+//         h3 {
+//             font-size: 2.5vw !important;
+//             text-align: center;
             
-        }
+//         }
+//     }
+// }
+
+// // - H1: 6.5vw | H3: 2.5vw
+// @media (min-width: 1000px) {
+
+//     .jumbo_text {
+       
+//         h1 {
+//             font-size: 6.5vw;
+//         }
+        
+//         h3 {
+//             font-size: 2.3vw;
+            
+//         }
+//     }
+// }
+
+
+
+
+
+// Padding 30px
+@media (min-width: 1000px) and (max-width: 1599px) {
+    .jumbo_text {
+       padding: 30px;
     }
 }
 
+// - H1: 5vw | H3: 2vw
 @media (min-width: 1000px) {
-
-    .jumbo_text {
-       
-        h1 {
-            font-size: 6.5vw !important;
-        }
-        
-        h3 {
-            font-size: 2.3vw !important;
-            
-        }
-    }
-}
-
-@media (min-width: 1200px) {
-    .jumbo_text {
-
-        grid-area: celinemaintext;
-
-        h1 {
-            font-size: 5vw !important;
-        }
-        
-        h3 {
-            font-size: 2vw !important;
-            text-align: center;
-            
-        }
-        
-    }
-
-}
-
-@media (max-width: 1599px) {
     .my_jumbotron {
 
         .jumbo_text {
-            grid-area: celinemaintext !important;
+            
             display: flex !important;
             flex-direction: column;
-            align-items: center !important;
-            padding-top: 30px;
+            align-items: center !important;   
             
+            h1 {
+                font-size: 5vw !important;
+            }
+            
+            h3 {
+                font-size: 2vw !important;
+                text-align: center;
+                
+            }
         }
         
     }
 }
+
+
+
+
 
 
 // IMMAGINE JUMBOTRON
@@ -281,16 +287,6 @@
         
     }
 }
-
-
-
-
-
-
-
-
-
-
 
 
 /*=====  End of Section comment block  ======*/

@@ -327,18 +327,15 @@ body header .my_jumbotron .jumbo_box .jumbo_img img {
 }
 body header .my_jumbotron .jumbo_box .jumbo_text {
   grid-area: celinemaintext;
-  padding-top: 30px;
 }
 body header .my_jumbotron .jumbo_box .jumbo_text h1, body header .my_jumbotron .jumbo_box .jumbo_text h3 {
   margin: 0;
   padding: 0;
 }
 body header .my_jumbotron .jumbo_box .jumbo_text h1 {
-  font-size: 6rem;
   font-family: "Dancing Script", "cursive";
 }
 body header .my_jumbotron .jumbo_box .jumbo_text h3 {
-  font-size: 2rem;
   font-family: "Caveat", "cursive";
 }
 body footer {

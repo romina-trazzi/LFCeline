@@ -7,29 +7,6 @@ import './bootstrap';
 ==================================================*/
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*---------- Subsection Header  ----------*/
 
 // const smallScreen = window.matchMedia('(max-width: 799px)')
