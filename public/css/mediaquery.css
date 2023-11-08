@@ -52,9 +52,14 @@
     display: none !important;
   }
 }
-@media (min-width: 1000px) and (max-width: 1599px) {
-  .jumbo_text {
-    padding: 30px;
+@media (min-width: 600px) {
+  .jumbo_text h1 {
+    font-size: 8vw !important;
+    text-align: center;
+  }
+  .jumbo_text h3 {
+    font-size: 4vw;
+    text-align: center;
   }
 }
 @media (min-width: 1000px) {
@@ -76,6 +81,13 @@
     max-height: 300px;
     max-width: 200px !important;
     width: 80% !important;
+  }
+}
+@media (min-width: 601px) and (max-width: 999px) {
+  .my_jumbotron .jumbo_img img {
+    max-height: 300px;
+    max-width: 200px !important;
+    width: 90% !important;
   }
 }
 @media (min-width: 1000px) {

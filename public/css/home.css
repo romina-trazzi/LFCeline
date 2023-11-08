@@ -328,6 +328,7 @@ body header .my_jumbotron .jumbo_box .jumbo_img img {
 }
 body header .my_jumbotron .jumbo_box .jumbo_text {
   grid-area: celinemaintext;
+  padding: 30px;
 }
 body header .my_jumbotron .jumbo_box .jumbo_text h1, body header .my_jumbotron .jumbo_box .jumbo_text h3 {
   margin: 0;
